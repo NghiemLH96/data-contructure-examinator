@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+.page-container{
+    width: 100%;
+    display: flex;
+    color: #eee;
+}
+.page-left{
+    width: 20%;
+    height: 100vh;
+    padding: 30px;
+    background-color: #000;
+    position: sticky;
+    top: 0;
+}
+.page-left::before{
+    content: "";
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: 0px 0px 150px 80px yellowgreen;
+    top: 10%;
+    left: 3%;
+    z-index: -2;
+}
+.menu-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 50px;
+}
+.logo{
+    font-size: 30px;
+    font-weight: 900;
+    margin: 30px 0;
+}
+.admin-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+}
+#admin-avatar{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+#admin-name{
+    font-size: 20px;
+}
+.menu-box{
+    width: 90%;
+    z-index: 1;
+}
+.menu-box>ul{
+    list-style-type: none;
+}
+.menu-box>ul>li{
+    padding: 10px 0;
+    text-wrap: nowrap;
+    position: relative;
+}
+.menu-box>ul>li:hover , .submenu-item:hover{
+    cursor: pointer;
+    color: yellowgreen;
+}
+.sub-menu-arrow{
+    position: absolute;
+    right: 0;
+}
+.sub-menu-arrow{
+    transform: rotate(180deg);
+}
+
+.reverse{
+    transform: rotate(0deg);
+}
+.submenu{
+    display: none;
+    list-style-type: none;
+    padding: 0;
+}
+.submenu-item{
+    text-wrap: nowrap;
+    padding: 10px;
+    cursor: pointer;
+}
+.page-right{
+    width: 100%;
+    color: #000;
+}

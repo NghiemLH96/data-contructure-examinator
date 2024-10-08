@@ -1,0 +1,37 @@
+header{
+    height: 60px;
+    width: 100vw;
+    background-color: #000;
+    color: #eee;
+    padding: 0 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+}
+.header-nav-account{
+    display: flex;
+    list-style-type: none;
+    column-gap: 30px;
+    margin: 0;
+}
+.header-nav-account>li>a{
+    text-decoration: none;
+    color: #eee;
+}
+.nav-btn{
+    padding: 0 10px;
+}
+#admin-nav-link{
+    border-right: 2px solid #eee;
+    padding: 0 50px;
+}
+#signup-nav-link{
+
+}
