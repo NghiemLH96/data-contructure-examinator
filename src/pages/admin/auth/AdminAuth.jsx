@@ -10,11 +10,17 @@ export default function AdminAuth() {
     const checkLogin = async() => {
         if (localStorage.getItem('token')) {
             const {payload} = await jwtVerify(localStorage.getItem('token'), secretKey)
-            if (payload.result.role === 0) {
-                navigate("/admin/dash-board")
-            }else{
-                return
-            }
+            .then(res => {
+                if (payload.result.role === 0) {
+                    navigate("/admin/dash-board")
+                }else{
+                    return
+                }
+            })
+            .catch(err => {
+                message.error("Token không hợp lệ")
+                localStorage.removeItem('token')
+            })
         }
     }
     checkLogin()

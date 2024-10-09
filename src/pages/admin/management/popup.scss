@@ -1,4 +1,4 @@
-.popup-container{
+.popup-container {
     position: absolute;
     display: flex;
     align-items: center;
@@ -7,58 +7,71 @@
     height: 100%;
     background-color: #cacaca7a;
     z-index: 10;
-    .popup-box{
+
+    .popup-box {
         width: 80%;
         background-color: #fff;
         border-radius: 15px;
         position: relative;
         overflow: hidden;
-        .popup-box-content{
+
+        .popup-box-content {
             width: 100%;
             padding: 40px;
             display: flex;
             flex-direction: column;
             align-items: start;
-            sup{
+
+            sup {
                 color: red;
             }
-            .input-group{
+
+            .input-group {
                 display: flex;
                 flex-direction: column;
                 row-gap: 10px;
-                input,select{
+
+                input,
+                select {
                     width: 100%;
                     padding: 5px;
                     outline: none;
                     border: #ccc 2px solid;
                     border-radius: 5px;
-                    &:focus{
+
+                    &:focus {
                         border: yellowgreen 2px solid;
                     }
                 }
-                .input-group-box{
+
+                .input-group-box {
                     display: grid;
                     grid-template-columns: 1fr 1fr;
                     column-gap: 20px;
-                    .ans-input-box{
+
+                    .ans-input-box {
                         display: flex;
-                        .add-ans-radio{
+
+                        .add-ans-radio {
                             width: 15px;
                             margin: 0 10px;
                         }
                     }
                 }
-                .btn-box{
+
+                .btn-box {
                     width: 100%;
                     display: flex;
                     justify-content: end;
                     column-gap: 10px;
-                    button{
+
+                    button {
                         font-size: 14px;
                     }
                 }
             }
-            h3{
+
+            h3 {
                 font-size: 25px;
                 font-weight: 700;
             }
@@ -67,13 +80,15 @@
 }
 
 
-.error{
+.error {
     border: rgb(255, 143, 143) 2px solid !important;
 }
-.error-msg-box{
+
+.error-msg-box {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    .error-msg{
+
+    .error-msg {
         color: rgb(255, 143, 143);
         font-size: 12px;
         margin: 0;
@@ -81,31 +96,35 @@
     }
 }
 
-.close-icon{
+.close-icon {
     position: absolute;
     font-size: 30px;
     top: 15px;
     right: 15px;
     cursor: pointer;
 }
-.popup-box-content{
-    span{
+
+.popup-box-content {
+    span {
         display: inline-block;
         color: red;
         font-weight: 600;
         width: 100px;
     }
-    .correct-icon{
+
+    .correct-icon {
         color: green;
         position: relative;
         top: 5px;
         left: 5px;
     }
-    .popup-box-content-info{
+
+    .popup-box-content-info {
         display: grid;
         grid-template-columns: 1fr 1fr;
         width: 100%;
-        p{
+
+        p {
             min-width: 50%;
         }
     }
@@ -114,9 +133,10 @@
 
 
 //Exams History
-.popup-box{
+.popup-box {
     padding: 40px;
-    table{
+
+    table {
         text-align: center;
         font-size: 13px;
         max-height: 75vh;
@@ -126,7 +146,21 @@
 }
 
 //Add Exams
-.table-container{
+.table-container {
     max-height: 200px !important;
     overflow-y: auto;
+}
+
+#passscores>.error,
+#maxscores>.error,
+#examTitle.error {
+    border-color: red;
+}
+
+.countBox {
+    display: flex;
+    height: 100%;
+    column-gap: 40px;
+    justify-content: center;
+    align-items: center;
 }
