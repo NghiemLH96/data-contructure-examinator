@@ -4,6 +4,7 @@ import { Switch, message, Modal } from 'antd';
 import '../management.scss'
 import ExamAddNew from './components/ExamAddNew';
 import TimeStamp from '../../../../functions/TimeStamp';
+import ExamEdit from './components/ExamEdit';
 
 export default function ExamsManager() {
     const [pageCount, setPageCount] = useState([])
@@ -12,8 +13,8 @@ export default function ExamsManager() {
     const [users, setUsers] = useState([])
     const [currentExam, setCurrentExam] = useState({})
     const [detailPopup, setDetailPopup] = useState(false)
-    const [examsHisPopup, setExamsHisPopup] = useState(false)
     const [addNewExam, setAddNewExam] = useState(false)
+    const [editExam, setEditExam] = useState(false)
 
     const pagesSize = 15;
 
@@ -28,7 +29,7 @@ export default function ExamsManager() {
 
     useEffect(() => {
         updateData();
-    }, [keywords, currentPage, detailPopup, addNewExam])
+    }, [keywords, currentPage, detailPopup, addNewExam,editExam])
 
     //Hàm render data chính
     const renderDataFn = (data, keywords, currentPage) => {
@@ -123,6 +124,7 @@ export default function ExamsManager() {
         <div className='contentBox'>
             {detailPopup && <ExamDetail setDetailPopup={setDetailPopup} currentExam={currentExam} />}
             {addNewExam && <ExamAddNew setAddNewExam={setAddNewExam} />}
+            {editExam && <ExamEdit setEditExam={setEditExam} currentExam={currentExam} />}
             {contextHolder}
             <div className='container'>
                 <table className="table table-striped table-hover table-sm caption-top align-middle table-bordered">
@@ -170,10 +172,10 @@ export default function ExamsManager() {
                                                 info
                                             </span>
                                             <span className="material-symbols-outlined" onClick={() => {
-                                                setExamsHisPopup(!examsHisPopup)
+                                                setEditExam(true)
                                                 setCurrentExam(item)
                                             }}>
-                                                history_edu
+                                                edit_square
                                             </span>
                                             <Switch size='small' className='switch' checked={item.status} onChange={(e) => handleActiveChange(item.id, e)} />
                                             <span class="material-symbols-outlined" onClick={()=>{ handleDelete(item.id) }}>

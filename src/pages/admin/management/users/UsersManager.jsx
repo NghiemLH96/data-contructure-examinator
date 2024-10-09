@@ -122,7 +122,7 @@ export default function UsersManager() {
                                 </tr> :
                                 users.map((item, index) => (
                                     <tr key={Math.random() * Date.now()}>
-                                        <th scope="row">{(currentPage - 1) * 10 + index + 1}</th>
+                                        <th scope="row">{(currentPage - 1) * pagesSize + index + 1}</th>
                                         <td>{item.id}</td>
                                         <td>{item.first_name}</td>
                                         <td>{item.last_name}</td>

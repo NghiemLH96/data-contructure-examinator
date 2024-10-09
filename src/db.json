@@ -1438,7 +1438,7 @@
   "exams": [
     {
       "id": "1",
-      "maximumScore": 40,
+      "maximumScore": 46,
       "passScore": 20,
       "testingDuration": 120,
       "questions": [
@@ -1461,12 +1461,15 @@
         "17",
         "18",
         "19",
-        "20"
+        "20",
+        "900431",
+        "29",
+        "30"
       ],
       "title": "Mid-term1 Test",
       "status": true,
-      "createAt": 1728444247950,
-      "updateAt": 1728444247950
+      "createAt": 1728455935428,
+      "updateAt": 1728456015067
     },
     {
       "id": "2",

@@ -37,11 +37,6 @@ export default function AdminMain() {
         })
     }, [])
 
-    useEffect(() => {
-        console.log(adminInfo);
-
-    }, [adminInfo])
-
     const handleLogout = () => {
         Modal.confirm({
             title: 'Do you want to log-out?',
@@ -65,7 +60,7 @@ export default function AdminMain() {
                     </section>
                     <section className="menu-box">
                         <ul className='menu'>
-                            <li className='menu-item' data-menu-id="1">Dashboard</li>
+                            <li className='menu-item' data-menu-id="1" onClick={() => { navigate("/admin/dash-board") }}>Dashboard</li>
                             <li className='menu-item' data-menu-id="2">Management
                                 <span id="sub-menu-arrow-2" className="material-symbols-outlined sub-menu-arrow">
                                     keyboard_arrow_up

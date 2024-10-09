@@ -38,7 +38,6 @@ export default function AdminAuth() {
                         const token = await new SignJWT({ result })
                             .setProtectedHeader({ alg: 'HS256' })
                             .setIssuedAt()
-                            .setExpirationTime('2h')
                             .sign(secretKey);
                         localStorage.setItem('token', token)
                         message.success('Login Success')
