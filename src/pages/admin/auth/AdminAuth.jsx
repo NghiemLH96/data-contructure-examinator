@@ -7,22 +7,21 @@ import { useNavigate } from 'react-router-dom'
 export default function AdminAuth() {
     const navigate = useNavigate();
     const secretKey = new TextEncoder().encode('don tShare')
-    const checkLogin = async() => {
-        if (localStorage.getItem('token')) {
-            const {payload} = await jwtVerify(localStorage.getItem('token'), secretKey)
-            .then(res => {
-                if (payload.result.role === 0) {
-                    navigate("/admin/dash-board")
-                }else{
-                    return
+    const checkLogin = async () => {
+        const token = localStorage.getItem('token');
+        if (token) {
+            try {
+                const checking = await jwtVerify(token, secretKey);
+                if (checking.payload && checking.payload.result.role === 0) {
+                    navigate("/admin/dash-board");
                 }
-            })
-            .catch(err => {
-                message.error("Token không hợp lệ")
-                localStorage.removeItem('token')
-            })
+            } catch (err) {
+                console.log(err);
+                message.error("Token không hợp lệ");
+                localStorage.removeItem('token');
+            }
         }
-    }
+    };
     checkLogin()
 
     const handleLogin = async (e) => {

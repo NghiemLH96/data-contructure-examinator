@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { message , Modal } from 'antd'
 import { jwtVerify } from 'jose'
+import logo from '../../../assets/logo.png'
 
 export default function AdminMain() {
     const [adminInfo, setAdminInfo] = useState({})
@@ -52,7 +53,7 @@ export default function AdminMain() {
             <section className="page-left">
                 <section className="menu-container">
                     <section className="logo-box">
-                        <h1 className="logo">Logo</h1>
+                        <img id='logo' src={logo} alt="" />
                     </section>
                     <section className="admin-info">
                         <img id="admin-avatar" src={adminInfo.avatar} alt="" />
