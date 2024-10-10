@@ -10,6 +10,7 @@ header{
     overflow: hidden;
     position: sticky;
     top: 0;
+    z-index: 10;
 }
 .header-nav{
     width: 100%;
@@ -20,6 +21,7 @@ header{
 }
 .header-nav-account{
     display: flex;
+    align-items: center;
     list-style-type: none;
     column-gap: 30px;
     margin: 0;
@@ -47,4 +49,17 @@ header{
     top: 3px;
     height: 80px;
     object-fit: cover;
+}
+.accInfoBox{
+    display: flex;
+    align-items: center;
+    a{
+        text-decoration: none;
+        color: #eee;
+    }
+    img{
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+    }
 }

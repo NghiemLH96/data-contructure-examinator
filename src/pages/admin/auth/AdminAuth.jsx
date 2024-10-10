@@ -8,7 +8,7 @@ export default function AdminAuth() {
     const navigate = useNavigate();
     const secretKey = new TextEncoder().encode('don tShare')
     const checkLogin = async () => {
-        const token = localStorage.getItem('token');
+        const token = localStorage.getItem('token-admin');
         if (token) {
             try {
                 const checking = await jwtVerify(token, secretKey);
@@ -18,7 +18,7 @@ export default function AdminAuth() {
             } catch (err) {
                 console.log(err);
                 message.error("Token không hợp lệ");
-                localStorage.removeItem('token');
+                localStorage.removeItem('token-admin');
             }
         }
     };
@@ -38,7 +38,7 @@ export default function AdminAuth() {
                             .setProtectedHeader({ alg: 'HS256' })
                             .setIssuedAt()
                             .sign(secretKey);
-                        localStorage.setItem('token', token)
+                        localStorage.setItem('token-admin', token)
                         message.success('Login Success')
                         navigate("/admin/dash-board")
                     } else {

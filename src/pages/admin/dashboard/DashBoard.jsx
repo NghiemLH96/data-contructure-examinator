@@ -9,7 +9,7 @@ export default function DashBoard() {
     const secretKey = new TextEncoder().encode('don tShare')
     useEffect(()=>{
         async function fetchAdminInfo(){
-            if (localStorage.getItem('token')) {
+            if (localStorage.getItem('token-admin')) {
                 const { payload } = await jwtVerify(localStorage.getItem('token'), secretKey)
                 setAdminInfo(payload.result)
             }

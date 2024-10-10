@@ -12,8 +12,8 @@ export default function AdminMain() {
     const navigate = useNavigate();
     const secretKey = new TextEncoder().encode('don tShare')
     const checkLogin = async () => {
-        if (localStorage.getItem('token')) {
-            const { payload } = await jwtVerify(localStorage.getItem('token'), secretKey)
+        if (localStorage.getItem('token-admin')) {
+            const { payload } = await jwtVerify(localStorage.getItem('token-admin'), secretKey)
             if (!payload || payload.result.role != 0) {
                 message.error("This page only for admin")
                 navigate("/admin-auth")
@@ -42,7 +42,7 @@ export default function AdminMain() {
         Modal.confirm({
             title: 'Do you want to log-out?',
             onOk() {
-                localStorage.removeItem('token')
+                localStorage.removeItem('token-admin')
                 navigate("/admin-auth")
             }
           });

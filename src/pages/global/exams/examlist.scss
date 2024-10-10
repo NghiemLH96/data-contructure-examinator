@@ -1,0 +1,19 @@
+.pageContainer {
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff;
+
+    .pageSection {
+        padding: 50px 150px;
+        h4{
+            font-size: 40px;
+            font-weight: 700;
+        }
+        .testIcon{
+            cursor: pointer;
+            &:hover{
+                color: yellowgreen;
+            }
+        }
+    }
+}

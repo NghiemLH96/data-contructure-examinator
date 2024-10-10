@@ -3,6 +3,12 @@
     height: 670px;
     display: flex;
     justify-content: center;
+    &.fnPage{
+        height: 250px; 
+        background: linear-gradient(to right bottom , #078933,yellowgreen,#ffffff);
+        background-size: 500%;
+        background-position-y: bottom;
+    }
     &::before{
         content: "";
         border-radius: 50%;
