@@ -6,7 +6,7 @@ import './global.scss'
 
 export default function Global() {
   return (
-    <div>
+    <div className='page-global'>
         <Header></Header>
         <Outlet></Outlet>
         <Footer></Footer>

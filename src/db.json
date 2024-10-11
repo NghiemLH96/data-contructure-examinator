@@ -880,6 +880,14 @@
           "id": 7,
           "createAt": 1728202663545,
           "score": 3
+        },
+        {
+          "id": "663080",
+          "examId": 1,
+          "createAt": 1728567019367,
+          "score": 0,
+          "duration": 0,
+          "passed": false
         }
       ]
     },
@@ -894,23 +902,7 @@
       "active": true,
       "role": 1,
       "createAt": 1728202663545,
-      "exams": [
-        {
-          "id": 1,
-          "createAt": 1728202663545,
-          "score": 5
-        },
-        {
-          "id": 2,
-          "createAt": 1728202663545,
-          "score": 4
-        },
-        {
-          "id": 3,
-          "createAt": 1728202663545,
-          "score": 3
-        }
-      ]
+      "exams": []
     },
     {
       "id": "3",
@@ -923,23 +915,7 @@
       "active": true,
       "role": 1,
       "createAt": 1728202663545,
-      "exams": [
-        {
-          "id": 1,
-          "createAt": 1728202663545,
-          "score": 5
-        },
-        {
-          "id": 2,
-          "createAt": 1728202663545,
-          "score": 4
-        },
-        {
-          "id": 3,
-          "createAt": 1728202663545,
-          "score": 3
-        }
-      ]
+      "exams": []
     },
     {
       "id": "4",
@@ -952,23 +928,7 @@
       "active": true,
       "role": 1,
       "createAt": 1728202663545,
-      "exams": [
-        {
-          "id": 1,
-          "createAt": 1728202663545,
-          "score": 5
-        },
-        {
-          "id": 2,
-          "createAt": 1728202663545,
-          "score": 4
-        },
-        {
-          "id": 3,
-          "createAt": 1728202663545,
-          "score": 3
-        }
-      ]
+      "exams": []
     },
     {
       "id": "5",
@@ -981,23 +941,7 @@
       "active": true,
       "role": 1,
       "createAt": 1728202663545,
-      "exams": [
-        {
-          "id": 1,
-          "createAt": 1728202663545,
-          "score": 5
-        },
-        {
-          "id": 2,
-          "createAt": 1728202663545,
-          "score": 4
-        },
-        {
-          "id": 3,
-          "createAt": 1728202663545,
-          "score": 3
-        }
-      ]
+      "exams": []
     },
     {
       "id": "6",
@@ -1010,23 +954,7 @@
       "active": true,
       "role": 1,
       "createAt": 1728202663545,
-      "exams": [
-        {
-          "id": 1,
-          "createAt": 1728202663545,
-          "score": 5
-        },
-        {
-          "id": 2,
-          "createAt": 1728202663545,
-          "score": 4
-        },
-        {
-          "id": 3,
-          "createAt": 1728202663545,
-          "score": 3
-        }
-      ]
+      "exams": []
     },
     {
       "id": "7",
@@ -1039,23 +967,7 @@
       "active": true,
       "role": 1,
       "createAt": 1728202663545,
-      "exams": [
-        {
-          "id": 1,
-          "createAt": 1728202663545,
-          "score": 5
-        },
-        {
-          "id": 2,
-          "createAt": 1728202663545,
-          "score": 4
-        },
-        {
-          "id": 3,
-          "createAt": 1728202663545,
-          "score": 3
-        }
-      ]
+      "exams": []
     },
     {
       "id": "8",
@@ -1068,23 +980,7 @@
       "active": true,
       "role": 1,
       "createAt": 1728202663545,
-      "exams": [
-        {
-          "id": 1,
-          "createAt": 1728202663545,
-          "score": 5
-        },
-        {
-          "id": 2,
-          "createAt": 1728202663545,
-          "score": 4
-        },
-        {
-          "id": 3,
-          "createAt": 1728202663545,
-          "score": 3
-        }
-      ]
+      "exams": []
     },
     {
       "id": "9",
@@ -1097,23 +993,7 @@
       "active": true,
       "role": 1,
       "createAt": 1728202663545,
-      "exams": [
-        {
-          "id": 1,
-          "createAt": 1728202663545,
-          "score": 5
-        },
-        {
-          "id": 2,
-          "createAt": 1728202663545,
-          "score": 4
-        },
-        {
-          "id": 3,
-          "createAt": 1728202663545,
-          "score": 3
-        }
-      ]
+      "exams": []
     },
     {
       "id": "10",
@@ -1126,23 +1006,7 @@
       "active": true,
       "role": 1,
       "createAt": 1728202663545,
-      "exams": [
-        {
-          "id": 1,
-          "createAt": 1728202663545,
-          "score": 5
-        },
-        {
-          "id": 2,
-          "createAt": 1728202663545,
-          "score": 4
-        },
-        {
-          "id": 3,
-          "createAt": 1728202663545,
-          "score": 3
-        }
-      ]
+      "exams": []
     },
     {
       "id": "11",
@@ -1155,23 +1019,7 @@
       "active": true,
       "role": 1,
       "createAt": 1728202663545,
-      "exams": [
-        {
-          "id": 1,
-          "createAt": 1728202663545,
-          "score": 5
-        },
-        {
-          "id": 2,
-          "createAt": 1728202663545,
-          "score": 4
-        },
-        {
-          "id": 3,
-          "createAt": 1728202663545,
-          "score": 3
-        }
-      ]
+      "exams": []
     },
     {
       "id": "12",
@@ -1184,23 +1032,7 @@
       "active": true,
       "role": 1,
       "createAt": 1728202663545,
-      "exams": [
-        {
-          "id": 1,
-          "createAt": 1728202663545,
-          "score": 5
-        },
-        {
-          "id": 2,
-          "createAt": 1728202663545,
-          "score": 4
-        },
-        {
-          "id": 3,
-          "createAt": 1728202663545,
-          "score": 3
-        }
-      ]
+      "exams": []
     },
     {
       "id": "13",
@@ -1213,23 +1045,7 @@
       "active": true,
       "role": 1,
       "createAt": 1728202663545,
-      "exams": [
-        {
-          "id": 1,
-          "createAt": 1728202663545,
-          "score": 5
-        },
-        {
-          "id": 2,
-          "createAt": 1728202663545,
-          "score": 4
-        },
-        {
-          "id": 3,
-          "createAt": 1728202663545,
-          "score": 3
-        }
-      ]
+      "exams": []
     },
     {
       "id": "14",
@@ -1242,23 +1058,7 @@
       "active": true,
       "role": 1,
       "createAt": 1728202663545,
-      "exams": [
-        {
-          "id": 1,
-          "createAt": 1728202663545,
-          "score": 5
-        },
-        {
-          "id": 2,
-          "createAt": 1728202663545,
-          "score": 4
-        },
-        {
-          "id": 3,
-          "createAt": 1728202663545,
-          "score": 3
-        }
-      ]
+      "exams": []
     },
     {
       "id": "15",
@@ -1271,23 +1071,7 @@
       "active": true,
       "role": 1,
       "createAt": 1728202663545,
-      "exams": [
-        {
-          "id": 1,
-          "createAt": 1728202663545,
-          "score": 5
-        },
-        {
-          "id": 2,
-          "createAt": 1728202663545,
-          "score": 4
-        },
-        {
-          "id": 3,
-          "createAt": 1728202663545,
-          "score": 3
-        }
-      ]
+      "exams": []
     },
     {
       "id": "16",
@@ -1300,23 +1084,7 @@
       "active": true,
       "role": 1,
       "createAt": 1728202663545,
-      "exams": [
-        {
-          "id": 1,
-          "createAt": 1728202663545,
-          "score": 5
-        },
-        {
-          "id": 2,
-          "createAt": 1728202663545,
-          "score": 4
-        },
-        {
-          "id": 3,
-          "createAt": 1728202663545,
-          "score": 3
-        }
-      ]
+      "exams": []
     },
     {
       "id": "17",
@@ -1329,23 +1097,7 @@
       "active": true,
       "role": 1,
       "createAt": 1728202663545,
-      "exams": [
-        {
-          "id": 1,
-          "createAt": 1728202663545,
-          "score": 5
-        },
-        {
-          "id": 2,
-          "createAt": 1728202663545,
-          "score": 4
-        },
-        {
-          "id": 3,
-          "createAt": 1728202663545,
-          "score": 3
-        }
-      ]
+      "exams": []
     },
     {
       "id": "18",
@@ -1358,23 +1110,7 @@
       "active": true,
       "role": 1,
       "createAt": 1728202663545,
-      "exams": [
-        {
-          "id": 1,
-          "createAt": 1728202663545,
-          "score": 5
-        },
-        {
-          "id": 2,
-          "createAt": 1728202663545,
-          "score": 4
-        },
-        {
-          "id": 3,
-          "createAt": 1728202663545,
-          "score": 3
-        }
-      ]
+      "exams": []
     },
     {
       "id": "19",
@@ -1387,23 +1123,7 @@
       "active": true,
       "role": 1,
       "createAt": 1728202663545,
-      "exams": [
-        {
-          "id": 1,
-          "createAt": 1728202663545,
-          "score": 5
-        },
-        {
-          "id": 2,
-          "createAt": 1728202663545,
-          "score": 4
-        },
-        {
-          "id": 3,
-          "createAt": 1728202663545,
-          "score": 3
-        }
-      ]
+      "exams": []
     },
     {
       "id": "20",
@@ -1416,23 +1136,7 @@
       "active": true,
       "role": 1,
       "createAt": 1728202663545,
-      "exams": [
-        {
-          "id": 1,
-          "createAt": 1728202663545,
-          "score": 5
-        },
-        {
-          "id": 2,
-          "createAt": 1728202663545,
-          "score": 4
-        },
-        {
-          "id": 3,
-          "createAt": 1728202663545,
-          "score": 3
-        }
-      ]
+      "exams": []
     },
     {
       "id": "dd7a",
@@ -1481,6 +1185,83 @@
       "role": 1,
       "gender": 0,
       "exams": []
+    },
+    {
+      "id": "87b6",
+      "firstName": "Thinh",
+      "lastName": "Chau",
+      "email": "123@gmail.com",
+      "passwords": "123456789",
+      "avatar": "data:image/jpeg;base64,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",
+      "active": true,
+      "role": 1,
+      "gender": 0,
+      "exams": [
+        {
+          "id": "617678",
+          "examId": 1,
+          "createAt": 1728608350092,
+          "score": 2,
+          "duration": 1,
+          "passed": false
+        },
+        {
+          "id": "670981",
+          "examId": null,
+          "createAt": 1728609495305,
+          "score": 0,
+          "duration": null,
+          "passed": false
+        },
+        {
+          "id": "872090",
+          "examId": null,
+          "createAt": 1728609591707,
+          "score": 0,
+          "duration": null,
+          "passed": false
+        },
+        {
+          "id": "540257",
+          "examId": null,
+          "createAt": 1728609842925,
+          "score": 0,
+          "duration": null,
+          "passed": false
+        },
+        {
+          "id": "773147",
+          "examId": null,
+          "createAt": 1728609861640,
+          "score": 0,
+          "duration": null,
+          "passed": false
+        },
+        {
+          "id": "378946",
+          "examId": 1,
+          "createAt": 1728610009393,
+          "score": 0,
+          "duration": 1,
+          "passed": false
+        },
+        {
+          "id": "995709",
+          "examId": 1,
+          "createAt": 1728610017695,
+          "score": 4,
+          "duration": 1,
+          "passed": false
+        },
+        {
+          "id": "371014",
+          "examId": 1,
+          "createAt": 1728610022747,
+          "score": 2,
+          "duration": 1,
+          "passed": false
+        }
+      ]
     }
   ],
   "exams": [

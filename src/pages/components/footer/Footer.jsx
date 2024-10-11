@@ -9,21 +9,21 @@ export default function Footer() {
                     <h6>About us</h6>
                     <hr />
                     <ul className="aboutUs">
-                        <li>Về HIU EDU</li>
-                        <li>Chính sách đổi trả</li>
-                        <li>Chính sách gia hạn</li>
-                        <li>Điều khoản sử dụng</li>
-                        <li>Chính sách bảo mật</li>
-                        <li>Tuyển dụng</li>
+                        <li>About HIU EDU</li>
+                        <li>Policy</li>
+                        <li>Extend Policy</li>
+                        <li>Term of use</li>
+                        <li>Privacy Policy</li>
+                        <li>Recruitment</li>
                     </ul>
                 </section>
                 <section className="section1__content">
-                    <h6>Liên Hệ</h6>
+                    <h6>Contact</h6>
                     <hr />
                     <ul>
                         <li>Địa chỉ : 215 Điện Biên Phủ, Quận Bình Thạnh, tp.Hồ Chí Minh</li>
                         <li>(+84) 123 456 789</li>
-                        <li>Thời gian làm việc : T2-T6 7h00 - 21h00</li>
+                        <li>Open Hours : T2-T6 7h00 - 21h00</li>
                         <li>Email:cskh@kusaedu.com</li>
                     </ul>
                 </section>
@@ -37,7 +37,7 @@ export default function Footer() {
                         <li><i className="fa fa-twitter"></i></li>
                     </ul>
                     <section className="supportBox">
-                        <button>Đăng ký tư vấn</button>
+                        <button>Sign up for consultation</button>
                         <input type="text" placeholder="Enter Your Email" />
                     </section>
                 </section>

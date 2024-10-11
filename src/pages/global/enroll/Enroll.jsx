@@ -68,9 +68,9 @@ export default function Enroll() {
     return (
         <main className="form-signin">
             <form id='form' className='flex-column'>
-                <img className="mb-4" src={logo} alt="" width="150" />
-                <h1 className="h3 mb-3 fw-normal textWhite">Create your own account</h1>
-                <div className='d-flex column-gap-3'>
+                <img className="mb-4 logo" src={logo} alt="" width="150" />
+                <h1 className="h3 mb-3 fw-normal textWhite formTitle">Create your own account</h1>
+                <div className='d-flex column-gap-3 input-container'>
                     <div className="w-100 form-floating">
                         <input type="text" className="form-control" id="firstName" name='firstName' placeholder="name@example.com" />
                         <label htmlFor="firstName">First Name</label>
@@ -80,14 +80,14 @@ export default function Enroll() {
                         <label htmlFor="floatingInput">Last Name</label>
                     </div>
                     <div className="w-100 form-floating">
-                        <select id='gender' defaultValue={""} className="form-select form-select-lg" aria-label="Default select example">
-                            <option disabled value="">Gender select</option>
+                        <select id='gender' defaultValue={""} className="form-select" aria-label="Default select example">
+                            <option disabled value="">Gender</option>
                             <option value="0">Male</option>
                             <option value="1">Female</option>
                         </select>
                     </div>
                 </div>
-                <div className='d-flex column-gap-3'>
+                <div className='d-flex column-gap-3  input-container'>
                     <div className="form-floating info-input">
                         <input type="email" className="form-control" id="email" name='email' placeholder="name@example.com" />
                         <label htmlFor="email">Email</label>
@@ -97,12 +97,12 @@ export default function Enroll() {
                         <label htmlFor="password">Passwords</label>
                     </div>
                 </div>
-                <div className="w-100 form-floating">
+                <div className="w-100 form-floating info-input-avatar">
                         <input type="text" className="form-control" id="avatar" name='avatar' placeholder="name@example.com" />
                         <label htmlFor="avatar">Avatar link</label>
                 </div>
                 <button className="w-100 btn btn-lg btn-primary" type="submit">Sign up</button>
-                <p className="mt-5 mb-3 text-muted textWhite">&copy; 2017–2021</p>
+                <a href="/auth" className='textWhite'>Back to Login</a>
             </form>
         </main>
     );

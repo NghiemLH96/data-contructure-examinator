@@ -1,65 +1,126 @@
-header{
+body {
+    width: 100%;
+    margin: 0;
+}
+
+header {
     height: 80px;
-    width: 100vw;
     background-color: #000;
     color: #eee;
-    padding: 0 100px;
+    padding: 0 20px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     overflow: hidden;
     position: sticky;
     top: 0;
     z-index: 10;
 }
-.header-nav{
+
+.header-nav {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 17px;
 }
-.header-nav-account{
+
+.header-nav-account {
     display: flex;
     align-items: center;
     list-style-type: none;
-    column-gap: 30px;
+    column-gap: 20px;
     margin: 0;
 }
-.header-nav-account>li>a{
+
+.header-nav-account > li > a {
     text-decoration: none;
     color: #eee;
 }
-.nav-btn{
+
+.nav-btn {
     padding: 0 10px;
     cursor: pointer;
-    &:hover{
+
+    &:hover {
         color: yellowgreen;
     }
 }
-#admin-nav-link{
-    border-right: 2px solid #eee;
-    padding: 0 50px;
-}
-#signup-nav-link{
 
+#admin-nav-link {
+    border-right: 2px solid #eee;
+    padding: 0 30px;
 }
-#logo{
-    position: relative;
-    top: 3px;
-    height: 80px;
+
+#logo {
+    height: 60px;
     object-fit: cover;
+    cursor: pointer;
 }
-.accInfoBox{
+
+.accInfoBox {
     display: flex;
     align-items: center;
-    a{
+
+    a {
         text-decoration: none;
         color: #eee;
     }
-    img{
-        height: 50px;
-        width: 50px;
+
+    img {
+        height: 40px;
+        width: 40px;
         border-radius: 50%;
+    }
+}
+
+
+@media screen and (max-width: 769px) {
+    .header-nav {
+        flex-direction: column; 
+        font-size: 13px; 
+    }
+
+    .header-nav-account {
+        padding: 0;
+        column-gap: 10px;
+    }
+
+    #logo {
+        width: 80px;
+        object-fit: contain;
+    }
+
+    img {
+        height: 35px;
+        width: 35px;
+    }
+
+    #admin-nav-link {
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 431px) {
+    header {
+        padding: 0 10px;
+    }
+
+    .header-nav {
+        font-size: 12px;
+    }
+
+    .header-nav-account {
+        column-gap: 5px;
+    }
+
+    #logo {
+        width: 80px;
+        object-fit: contain;
+    }
+
+    img {
+        height: 30px;
+        width: 30px;
     }
 }

@@ -52,8 +52,8 @@ export default function Auth() {
     return (
         <main className="form-signin">
             <form id='form'>
-                <img className="mb-4" src={logo} alt="" width="150" />
-                <h1 className="h3 mb-3 fw-normal textWhite">Please sign in</h1>
+                <img className="mb-4 logo" src={logo} alt="" width="150" />
+                <h1 className="h3 mb-3 fw-normal textWhite formTitle">Please sign in</h1>
 
                 <div className="w-100 form-floating">
                     <input type="email" className="form-control" id="floatingInput" name='email' placeholder="name@example.com" />
@@ -64,13 +64,14 @@ export default function Auth() {
                     <label htmlFor="floatingPassword">Password</label>
                 </div>
 
-                <div className="w-100 checkbox mb-3 text-center">
+                <div className="w-100 checkbox mb-3 text-center rememberBox">
                     <label className='textWhite'>
                         <input type="checkbox" value="remember-me" /> Remember me
                     </label>
+                    <a href="" className='textWhite'>Forget passwords</a>
                 </div>
                 <button className="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
-                <p className="mt-5 mb-3 text-muted textWhite">&copy; 2017–2021</p>
+                <a href="/enroll" className='textWhite'>Create a new account</a>
             </form>
         </main>
     );

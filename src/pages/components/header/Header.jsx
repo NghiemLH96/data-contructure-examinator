@@ -3,7 +3,7 @@ import './header.scss';
 import { useNavigate } from 'react-router-dom';
 import Logo from '../../../assets/logo.png';
 import { Modal } from 'antd';
-import { jwtVerify } from 'jose'; // Ensure to import jwtVerify
+import { jwtVerify } from 'jose';
 
 export default function Header() {
     const secretKey = new TextEncoder().encode('don tShare');

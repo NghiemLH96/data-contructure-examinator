@@ -1,15 +1,18 @@
-.home-banner-container{
+.home-banner-container {
     width: 100%;
     height: 670px;
     display: flex;
     justify-content: center;
-    &.fnPage{
+    position: relative; /* Thêm vị trí tương đối để các pseudo-element hoạt động đúng */
+
+    &.fnPage {
         height: 250px; 
-        background: linear-gradient(to right bottom , #078933,yellowgreen,#ffffff);
+        background: linear-gradient(to right bottom, #078933, yellowgreen, #ffffff);
         background-size: 500%;
         background-position-y: bottom;
     }
-    &::before{
+
+    &::before {
         content: "";
         border-radius: 50%;
         position: absolute;
@@ -18,7 +21,8 @@
         left: 3%;
         z-index: -2;
     }
-    &::after{
+
+    &::after {
         content: "";
         border-radius: 50%;
         position: absolute;
@@ -27,12 +31,14 @@
         left: 97%;
         z-index: -2;
     }
-    .home-nav-menu{
+
+    .home-nav-menu {
         display: flex;
         justify-content: center;
         width: 70%;
         height: 100%;
-        .home-nav-menu-content{
+
+        .home-nav-menu-content {
             width: 85%;
             display: flex;
             flex-direction: column;
@@ -40,16 +46,19 @@
             justify-content: center;
             text-align: center;
             row-gap: 25px;
-            .home-nav-menu-title{
-                display: none;
+
+            .home-nav-menu-title {
+                display: none; /* Chỉ hiển thị trên các màn hình lớn hơn */
                 font-size: 60px;
                 font-weight: 900;
             }
-            .home-nav-menu-desc{
+
+            .home-nav-menu-desc {
                 font-size: 25px;
-                display: none;
+                display: none; /* Chỉ hiển thị trên các màn hình lớn hơn */
             }
-            .home-nav-menu-btn{
+
+            .home-nav-menu-btn {
                 width: 25%;
                 height: 50px;
                 border: none;
@@ -58,23 +67,216 @@
                 font-weight: 700;
                 color: #ffffff;
                 transition: all 0.3s ease-in-out;
-                &:hover{
+
+                &:hover {
                     background-color: transparent;
                     color: #000;
                     border: 1px solid #000;
                 }
             }
-            .brands-logo-container{
+
+            .brands-logo-container {
                 width: 100%;
                 display: flex;
                 justify-content: space-evenly;
                 margin: 25px 0;
-                .brand-logo{
+
+                .brand-logo {
                     height: 70px;
                     object-fit: cover;
                 }
             }
+        }
+    }
+}
 
+/* Responsive styles */
+@media (max-width: 1025px) {
+    .home-banner-container {
+        width: 100%;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        position: relative; /* Thêm vị trí tương đối để các pseudo-element hoạt động đúng */
+    
+        &.fnPage {
+            height: 250px; 
+            background: linear-gradient(to right bottom, #078933, yellowgreen, #ffffff);
+            background-size: 500%;
+            background-position-y: bottom;
+        }
+    
+        &::before {
+            content: "";
+            box-shadow: 0px 0px 1000px 70px #078933;
+        }
+    
+        &::after {
+            box-shadow: 0px 0px 1000px 70px yellowgreen;
+        }
+    
+        .home-nav-menu {
+            display: flex;
+            justify-content: center;
+            width: 70%;
+            height: 100%;
+    
+            .home-nav-menu-content {
+                row-gap: 15px;
+    
+                .home-nav-menu-title {
+                    display: none; /* Chỉ hiển thị trên các màn hình lớn hơn */
+                    font-size: 35px !important;
+                    font-weight: 900;
+                }
+    
+                .home-nav-menu-desc {
+                    font-size: 15px;                   
+                    display: none; /* Chỉ hiển thị trên các màn hình lớn hơn */
+                }
+    
+                .home-nav-menu-btn {
+                    width: 20%;
+                    height: 30px;
+                    padding: 5px;
+                    font-size: 12px;
+                }
+    
+                .brands-logo-container {
+                    margin: 10px 0;
+    
+                    .brand-logo {
+                        height: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 769px) {
+    .home-banner-container {
+        width: 100%;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        position: relative; /* Thêm vị trí tương đối để các pseudo-element hoạt động đúng */
+    
+        &.fnPage {
+            height: 250px; 
+            background: linear-gradient(to right bottom, #078933, yellowgreen, #ffffff);
+            background-size: 500%;
+            background-position-y: bottom;
+        }
+    
+        &::before {
+            content: "";
+            box-shadow: 0px 0px 1000px 70px #078933;
+        }
+    
+        &::after {
+            box-shadow: 0px 0px 1000px 70px yellowgreen;
+        }
+    
+        .home-nav-menu {
+            display: flex;
+            justify-content: center;
+            width: 70%;
+            height: 100%;
+    
+            .home-nav-menu-content {
+                row-gap: 15px;
+    
+                .home-nav-menu-title {
+                    display: none; /* Chỉ hiển thị trên các màn hình lớn hơn */
+                    font-size: 35px !important;
+                    font-weight: 900;
+                }
+    
+                .home-nav-menu-desc {
+                    font-size: 15px;                   
+                    display: none; /* Chỉ hiển thị trên các màn hình lớn hơn */
+                }
+    
+                .home-nav-menu-btn {
+                    width: 20%;
+                    height: 30px;
+                    padding: 5px;
+                    font-size: 12px;
+                }
+    
+                .brands-logo-container {
+                    margin: 10px 0;
+    
+                    .brand-logo {
+                        height: 28px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 431px) {
+    .home-banner-container {
+        width: 100%;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        position: relative; /* Thêm vị trí tương đối để các pseudo-element hoạt động đúng */
+    
+        &.fnPage {
+            height: 250px; 
+            background: linear-gradient(to right bottom, #078933, yellowgreen, #ffffff);
+            background-size: 500%;
+            background-position-y: bottom;
+        }
+    
+        &::before {
+            content: "";
+            box-shadow: 0px 0px 1000px 70px #078933;
+        }
+    
+        &::after {
+            box-shadow: 0px 0px 1000px 70px yellowgreen;
+        }
+    
+        .home-nav-menu {
+            display: flex;
+            justify-content: center;
+            width: 70%;
+            height: 100%;
+    
+            .home-nav-menu-content {
+                row-gap: 15px;
+    
+                .home-nav-menu-title {
+                    display: none; /* Chỉ hiển thị trên các màn hình lớn hơn */
+                    font-size: 20px !important;
+                    font-weight: 900;
+                }
+    
+                .home-nav-menu-desc {
+                    font-size: 15px;                   
+                    display: none; /* Chỉ hiển thị trên các màn hình lớn hơn */
+                }
+    
+                .home-nav-menu-btn {
+                    width: 30%;
+                    height: 30px;
+                    padding: 5px;
+                    font-size: 12px;
+                }
+    
+                .brands-logo-container {
+                    margin: 10px 0;
+    
+                    .brand-logo {
+                        height: 20px;
+                        object-fit: cover;
+                    }
+                }
+            }
         }
     }
 }

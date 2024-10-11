@@ -1,28 +1,25 @@
-.form-signin{
-    height: 100vh;
+.form-signin {
+    min-height: 100vh;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    &::before{
+
+    &::before, &::after {
         content: "";
         border-radius: 50%;
         position: absolute;
         box-shadow: 0px 0px 1000px 120px #078933;
-        top: 100%;
-        left: 3%;
         z-index: -2;
     }
-    &::after{
-        content: "";
-        border-radius: 50%;
-        position: absolute;
+
+    &::after {
         box-shadow: 0px 0px 1000px 120px yellowgreen;
-        top: 010%;
+        top: 10%;
         left: 97%;
-        z-index: -2;
     }
-    form{
+
+    form {
         background-color: black;
         border-radius: 25px;
         padding: 60px 30px !important;
@@ -30,16 +27,69 @@
         height: 90%;
     }
 }
-.textWhite{
+
+.textWhite {
     color: #eee;
 }   
 
-.form-select {
-    padding-top: 10px !important; 
-    padding-bottom: 10px;
+.form-select, .info-input {
+    padding: 10px 0 !important; 
     line-height: 1.5;
     color: #2e2e2e;
 }
-.info-input{
+
+.info-input {
     width: 346px;
+}
+
+.formTitle {
+    font-size: 2.2rem;  // Sử dụng rem
+    font-weight: 700 !important;
+}
+
+@media screen and (max-width: 1440px) {
+    .info-input {
+        width: 320px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .info-input {
+        width: 220px;
+    }
+    .form-select {
+        font-size: 1.1rem;  // Sử dụng rem
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .form-signin {
+        form {
+            height: 100%;
+            row-gap: 10px;
+
+            .logo {
+                width: 50%;
+            }
+            .input-container {
+                flex-direction: column;
+                row-gap: 10px;
+                transform: scale(0.8);
+            }
+            button {
+                font-size: 1.125rem;  // Sử dụng rem
+                width: 70% !important;
+                padding: 5px;
+            }
+        }
+    }
+    .formTitle {
+        font-size: 1.25rem !important;  // Sử dụng rem
+    }
+    .info-input {
+        width: 100%;
+    }
+    .info-input-avatar {
+        display: none;
+    }
 }
