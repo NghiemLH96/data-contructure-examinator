@@ -83,14 +83,15 @@ export default function TestingPage() {
     const showModal = (totalPoints) => {
         if (totalPoints >= exam?.passScore) {
             Modal.success({
-                title: 'You passed the test',
+                title: 'Bạn đã đỗ bài thi',
                 content: (
                     <div>
-                        <p>Your Scores : {totalPoints}/{exam?.maximumScore}.</p>
-                        <p>Pass Scores : {exam?.passScore}</p>
+                        <p>Chúc mừng bạn đã hoàn thành xuất sắc bài thi</p>
+                        <p>Điểm của bạn : {totalPoints}/{exam?.maximumScore}.</p>
+                        <p>Điểm đạt : {exam?.passScore}</p>
                     </div>
                 ),
-                okText: 'Return to exams list',
+                okText: 'Trở về danh sách bài thi',
                 onOk: () => {
                     navigate('/exams')
                 }
@@ -110,14 +111,15 @@ export default function TestingPage() {
             });
         } else {
             Modal.error({
-                title: 'You failed the test!',
+                title: 'Bạn thi rớt mất rồi!',
                 content: (
                     <div>
-                        <p>Your Scores : {totalPoints}/{exam?.maximumScore}.</p>
-                        <p>Pass Scores : {exam?.passScore}</p>
+                        <p>Bạn cần cố gắng hơn nữa , chúc bạn đạt được kết quả tốt hơn trong lần thi tới.</p>
+                        <p>Điểm của bạn : {totalPoints}/{exam?.maximumScore}.</p>
+                        <p>Điểm đạt : {exam?.passScore}</p>
                     </div>
                 ),
-                okText: 'Return to exams list',
+                okText: 'Trở về danh sách bài thi',
                 onOk: () => {
                     navigate('/exams')
                 },

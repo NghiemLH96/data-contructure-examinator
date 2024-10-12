@@ -21,7 +21,7 @@ export default function UserDetail({ setDetailPopup, currentUser }) {
                     </div>
                     <div className='popup-box-content-info'>
                         <p><span>Trạng thái:</span> {currentUser.active == 1 ? 'Hoạt động' : 'Tạm ngưng'}</p>
-                        <p><span>Role:</span> {currentUser.role == 1 ? 'Admin' : 'User'}</p>
+                        <p><span>Role:</span> {currentUser.role == 0 ? 'Admin' : 'User'}</p>
                     </div>
                 </section>
             </section>

@@ -132,8 +132,9 @@ export default function QuestionsManager() {
                                             item.bloom == "4" ? "Phân tích" :'Khác'
                                         }</td>
                                         <td>{item.ans.find((ans) => {
-                                            ans.correct == true
-                                            return ans
+                                            if (ans.correct == true) {
+                                                return ans
+                                            }
                                         }).content}</td>
                                         <td>{item.level}</td>
                                         <td>{item.score}</td>

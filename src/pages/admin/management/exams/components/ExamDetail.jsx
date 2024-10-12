@@ -49,10 +49,18 @@ export default function ExamDetail({setDetailPopup,currentExam}) {
                 }} className="page-link" href="#">{i + 1}</a>
             </li>
         ));
-    
+        
         setRenderQuestions(renderData);
         setPageCount(pageElements);
     }, [currentPage, questionList, currentExam]);
+
+    useEffect(() => {
+        console.log(renderQuestions.map((item, index) => {item.ans.find((ans) => {
+            if (ans.correct == true) {
+                return ans
+            }})}));
+        
+    },[renderQuestions])
 
     return (
         <section className='popup-container'>
@@ -83,8 +91,9 @@ export default function ExamDetail({setDetailPopup,currentExam}) {
                                         item.bloom == "3" ? "Vận dụng":
                                         item.bloom == "4" ? "Phân tích": 'Other'}</td>
                                     <td>{item.ans.find((ans) => {
-                                            ans.correct == true
-                                            return ans
+                                            if (ans.correct == true) {
+                                                return ans
+                                            }
                                         }).content}</td>
                                         <td>{item.score}</td>
                                 </tr>

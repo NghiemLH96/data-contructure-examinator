@@ -234,8 +234,9 @@ export default function ExamAddNew({ setAddNewExam }) {
                                                 item.bloom == "3" ? "Vận dụng":
                                                 item.bloom == "4" ? "Phân tích": 'Other'}</td>
                                             <td>{item.ans.find((ans) => {
-                                                ans.correct == true
-                                                return ans
+                                                if (ans.correct == true) {
+                                                    return ans
+                                                }
                                             }).content}</td>
                                             <td>{item.score}</td>
                                         </tr>
