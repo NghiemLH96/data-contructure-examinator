@@ -181,23 +181,23 @@ export default function ExamEdit({ setEditExam, currentExam }) {
         <section className='popup-container'>
             <section className='popup-box'>
                 <form action="" className='popup-box-content' onSubmit={(event) => { editExam(event) }}>
-                    <h3>Update Exam</h3>
+                    <h3>Cập nhật bài thi</h3>
                     <div className='input-group'>
-                        <label htmlFor="title">Title :<sup>*</sup></label>
+                        <label htmlFor="title">Tiêu đề :<sup>*</sup></label>
                         <input id='examTitle' name='title' defaultValue={currentExam.title} type="text" maxLength={30} placeholder='Max 30 characters' onChange={() => { handleTitleChange() }} />
                     </div>
                     <div className='input-group'>
-                        <label htmlFor="duration">Duration (mins) :<sup>*</sup></label>
+                        <label htmlFor="duration">Thời lượng (phút) :<sup>*</sup></label>
                         <input id='examDuration' name='duration' type="number" min={45} max={120} defaultValue={currentExam.testingDuration} placeholder='45mins - 120mins' />
                     </div>
                     <div className='input-group'>
                         <div className='input-group-box'>
                             <div>
-                                <label htmlFor="maxscore">Max Score :<sup>*</sup></label>
+                                <label htmlFor="maxscore">Điểm tối đa :<sup>*</sup></label>
                                 <input id='maxscores' defaultValue={currentExam.maximumScore} name='maxscore' type="number" max={100} placeholder='Max 100' className={/* error.question ? 'error' :  */''} onChange={() => { handleMaxScoreChange() }} />
                             </div>
                             <div>
-                                <label htmlFor="passscore">Pass Score :<sup>*</sup></label>
+                                <label htmlFor="passscore">Điểm đạt :<sup>*</sup></label>
                                 <input id='passscores' defaultValue={currentExam.passScore} name='passscore' type="number" max={100} placeholder='Max 100' className={/* error.question ? 'error' :  */''} onChange={() => { handlePassScoreChange() }} />
                             </div>
                         </div>
@@ -205,12 +205,12 @@ export default function ExamEdit({ setEditExam, currentExam }) {
                     <div className='input-group'>
                         <div className='input-group-box'>
                             <div>
-                                <label htmlFor="quesCount">Questions Count :<sup>*</sup></label>
+                                <label htmlFor="quesCount">Số lượng câu hỏi :<sup>*</sup></label>
                                 <input id='quesCount' defaultValue={currentExam.questions.length} name='quesCount' type="number" maxLength={40} placeholder='Max 40 questions' className={/* error.question ? 'error' :  */''} onChange={() => { handleQuestionCountChange() }} />
                             </div>
                             <div className='countBox'>
-                                <b id='selectedPoints'>Checked point:{selectedPoints}</b>
-                                <b id='selectedQues'>Checked Ques:{selectedQues}</b>
+                                <b id='selectedPoints'>Số điểm đã chọn:{selectedPoints}</b>
+                                <b id='selectedQues'>Số câu đã chọn:{selectedQues}</b>
                             </div>
                         </div>
                     </div>
@@ -220,11 +220,11 @@ export default function ExamEdit({ setEditExam, currentExam }) {
                                 <tr>
                                     <th scope="col">Check</th>
                                     <th scope="col">#</th>
-                                    <th scope="col">Question ID</th>
-                                    <th scope="col">Question</th>
+                                    <th scope="col">ID Câu hỏi</th>
+                                    <th scope="col">Câu hỏi</th>
                                     <th scope="col">Bloom</th>
-                                    <th scope="col">Correct answer</th>
-                                    <th scope="col">Score</th>
+                                    <th scope="col">Đáp án đúng</th>
+                                    <th scope="col">Điểm</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -239,8 +239,10 @@ export default function ExamEdit({ setEditExam, currentExam }) {
                                             <th scope="row">{index + 1}</th>
                                             <td>{item.id}</td>
                                             <td>{item.ques}</td>
-                                            <td>{item.bloom == "2" ? "Remember" :
-                                                item.bloom == "1" ? "Understand" : 'Other'}</td>
+                                            <td>{item.bloom == "1" ? "Hiểu" :
+                                                item.bloom == "2" ? "Nhớ" :
+                                                item.bloom == "3" ? "Vận dụng":
+                                                item.bloom == "4" ? "Phân tích": 'Other'}</td>
                                             <td>{item.ans.find((ans) => {
                                                 ans.correct == true
                                                 return ans
@@ -254,8 +256,8 @@ export default function ExamEdit({ setEditExam, currentExam }) {
                     </div>
                     <div className='input-group'>
                         <div className='btn-box'>
-                            <button type="submit" disabled={submitStatus} className="btn btn-dark">Submit</button>
-                            <button className="btn btn-danger" onClick={() => { setEditExam(false) }}>Cancel</button>
+                            <button type="submit" disabled={submitStatus} className="btn btn-dark">Cập nhật</button>
+                            <button className="btn btn-danger" onClick={() => { setEditExam(false) }}>Hủy</button>
                         </div>
                     </div>
                 </form>

@@ -160,8 +160,12 @@ export default function TestingPage() {
                     const newExam = {
                         id: String(Math.ceil(Math.random() * 1000000)),
                         examId: Number(exam.id),
+                        examTitle: exam.title,
                         createAt: Date.now(),
+                        maximumScore: exam.maximumScore,
+                        passScore: exam.passScore,
                         score: totalPoints,
+                        testingDuration:exam.testingDuration,
                         duration: exam.testingDuration - Math.floor(timeLeft / 60),
                         passed: totalPoints >= exam?.passScore,
                     };
@@ -171,10 +175,10 @@ export default function TestingPage() {
                                 return res.json();
                             }
                         })
-                        if (!userInfo) {
-                            message.error("Have problem from getting user")
-                            return
-                        }
+                    if (!userInfo) {
+                        message.error("Have problem from getting user")
+                        return
+                    }
                     fetch(`http://localhost:3000/users/${userInfo.id}`, {
                         method: 'PUT',
                         headers: { 'Content-Type': 'application/json' },
@@ -246,11 +250,11 @@ export default function TestingPage() {
     return (
         <div className='page-container'>
             <section className='page-container-item'>
-                <h2>Testing</h2>
+                <h2>{exam.title}</h2>
             </section>
             <section className='page-container-item'>
                 <section id='question-content-container' className='page-section-container'>
-                    <p><span>{`Question ${choosingQuesIndex + 1}`}</span> : {currentQuestion?.ques}</p>
+                    <p><span>{`Câu ${choosingQuesIndex + 1} / ${exam.questions.length}`}</span> : {currentQuestion?.ques} </p>
                 </section>
                 <section id='answer-container' className='page-section-container'>
                     {
@@ -286,7 +290,7 @@ export default function TestingPage() {
                             </button>
                         ))}
                     </div>
-                    <div id='end-test-buttons'>
+                    <div id='nav-test-buttons'>
                         <button onClick={handlePrevQues} disabled={choosingQuesIndex === 0}>Prev</button>
                         <button onClick={handleNextQues} disabled={choosingQuesIndex === exam.questions.length - 1}>Next</button>
                     </div>

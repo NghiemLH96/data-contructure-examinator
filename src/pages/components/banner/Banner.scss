@@ -3,8 +3,7 @@
     height: 670px;
     display: flex;
     justify-content: center;
-    position: relative; /* Thêm vị trí tương đối để các pseudo-element hoạt động đúng */
-
+    position: relative;
     &.fnPage {
         height: 250px; 
         background: linear-gradient(to right bottom, #078933, yellowgreen, #ffffff);
@@ -48,14 +47,14 @@
             row-gap: 25px;
 
             .home-nav-menu-title {
-                display: none; /* Chỉ hiển thị trên các màn hình lớn hơn */
+                display: none;
                 font-size: 60px;
-                font-weight: 900;
+                font-weight: 700;
             }
 
             .home-nav-menu-desc {
                 font-size: 25px;
-                display: none; /* Chỉ hiển thị trên các màn hình lớn hơn */
+                display: none;
             }
 
             .home-nav-menu-btn {
@@ -64,6 +63,7 @@
                 border: none;
                 border-radius: 10px;
                 background-color: #078933;
+                font-size: 20px;
                 font-weight: 700;
                 color: #ffffff;
                 transition: all 0.3s ease-in-out;
@@ -90,14 +90,13 @@
     }
 }
 
-/* Responsive styles */
 @media (max-width: 1025px) {
     .home-banner-container {
         width: 100%;
         height: 400px;
         display: flex;
         justify-content: center;
-        position: relative; /* Thêm vị trí tương đối để các pseudo-element hoạt động đúng */
+        position: relative; 
     
         &.fnPage {
             height: 250px; 
@@ -125,14 +124,14 @@
                 row-gap: 15px;
     
                 .home-nav-menu-title {
-                    display: none; /* Chỉ hiển thị trên các màn hình lớn hơn */
+                    display: none; 
                     font-size: 35px !important;
                     font-weight: 900;
                 }
     
                 .home-nav-menu-desc {
                     font-size: 15px;                   
-                    display: none; /* Chỉ hiển thị trên các màn hình lớn hơn */
+                    display: none; 
                 }
     
                 .home-nav-menu-btn {
@@ -160,7 +159,7 @@
         height: 400px;
         display: flex;
         justify-content: center;
-        position: relative; /* Thêm vị trí tương đối để các pseudo-element hoạt động đúng */
+        position: relative; 
     
         &.fnPage {
             height: 250px; 
@@ -188,14 +187,14 @@
                 row-gap: 15px;
     
                 .home-nav-menu-title {
-                    display: none; /* Chỉ hiển thị trên các màn hình lớn hơn */
+                    display: none; 
                     font-size: 35px !important;
                     font-weight: 900;
                 }
     
                 .home-nav-menu-desc {
                     font-size: 15px;                   
-                    display: none; /* Chỉ hiển thị trên các màn hình lớn hơn */
+                    display: none; 
                 }
     
                 .home-nav-menu-btn {
@@ -207,9 +206,10 @@
     
                 .brands-logo-container {
                     margin: 10px 0;
+                    flex-wrap: wrap;
     
                     .brand-logo {
-                        height: 28px;
+                        width: 70px;
                     }
                 }
             }
@@ -223,7 +223,7 @@
         height: 400px;
         display: flex;
         justify-content: center;
-        position: relative; /* Thêm vị trí tương đối để các pseudo-element hoạt động đúng */
+        position: relative; 
     
         &.fnPage {
             height: 250px; 
@@ -251,29 +251,30 @@
                 row-gap: 15px;
     
                 .home-nav-menu-title {
-                    display: none; /* Chỉ hiển thị trên các màn hình lớn hơn */
+                    display: none;
                     font-size: 20px !important;
                     font-weight: 900;
                 }
     
                 .home-nav-menu-desc {
-                    font-size: 15px;                   
-                    display: none; /* Chỉ hiển thị trên các màn hình lớn hơn */
+                    font-size: 13px;                   
+                    display: none;
                 }
     
                 .home-nav-menu-btn {
                     width: 30%;
                     height: 30px;
                     padding: 5px;
-                    font-size: 12px;
+                    font-size: 10px;
                 }
     
                 .brands-logo-container {
+                    flex-wrap: wrap;
                     margin: 10px 0;
     
                     .brand-logo {
-                        height: 20px;
-                        object-fit: cover;
+                        width: 60px;
+                        object-fit: contain;
                     }
                 }
             }

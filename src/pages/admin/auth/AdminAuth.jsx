@@ -26,12 +26,10 @@ export default function AdminAuth() {
 
     const handleLogin = async (e) => {
         e.preventDefault();
-
-
         await fetch("http://localhost:3000/users")
             .then(res => res.json())
             .then(async data => {
-                const result = data.find(user => user.email == e.target.email.value)
+                const result = data.find(user => user.email == e.target.email.value && user.role == 0)
                 if (result) {
                     if (result.passwords == e.target.password.value) {
                         const token = await new SignJWT({ result })
@@ -63,7 +61,7 @@ export default function AdminAuth() {
                     </section>
                     <form action="" onSubmit={(e) => { handleLogin(e) }}>
                         <input id="admin-auth-acc" className="auth-input" name='email' type="email" placeholder="Enter your admin account" />
-                        <input id="admin-auth-pw" className="auth-input" name='password' type="text" placeholder="Enter you passwords" />
+                        <input id="admin-auth-pw" className="auth-input" name='password' type="password" placeholder="Enter you passwords" />
                         <button id="admin-login-btn" type='submit'>Log in</button>
                         <section id="forget-pw-box">
                             <div id="remember-box">

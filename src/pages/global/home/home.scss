@@ -23,3 +23,43 @@
         }
     }
 }
+
+@media (max-width: 1025px) {
+    .home-content{
+        .subTitle-container{
+            padding: 50px 10px;
+            h2{
+                font-size: 35px;
+            }
+            p{
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+@media (max-width: 431px) {
+    .home-content{
+        .subTitle-container{
+            padding: 50px 20px;
+            h2{
+                font-size: 25px;
+            }
+            p{
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+/* @media (max-width: 1025px) {
+
+}
+
+@media (max-width: 769px) {
+
+}
+
+@media (max-width: 431px) {
+    
+} */

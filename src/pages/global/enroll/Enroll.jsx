@@ -13,8 +13,8 @@ export default function Enroll() {
     $(document).ready(function () {
         $("#form").on("submit",async function (event) {
             event.preventDefault();
-            const firstName = $("#firstName").val();
-            const lastName = $("#lastName").val();
+            const first_name = $("#firstName").val();
+            const last_name = $("#lastName").val();
             const email = $("#email").val();
             const passwords = $("#password").val();
             const gender = $("#gender").val();
@@ -39,8 +39,8 @@ export default function Enroll() {
                 return
             }
             const newUser = {
-                firstName,
-                lastName,
+                first_name,
+                last_name,
                 email,
                 passwords,
                 avatar,
@@ -67,42 +67,37 @@ export default function Enroll() {
     })
     return (
         <main className="form-signin">
-            <form id='form' className='flex-column'>
-                <img className="mb-4 logo" src={logo} alt="" width="150" />
-                <h1 className="h3 mb-3 fw-normal textWhite formTitle">Create your own account</h1>
-                <div className='d-flex column-gap-3 input-container'>
+            <form id='form'>
+            <img className="logo" src={logo} alt=""/>
+            <h1 className="textWhite formTitle">Tạo tài khoản</h1>
+            <div className='input-container-enroll'>
                     <div className="w-100 form-floating">
-                        <input type="text" className="form-control" id="firstName" name='firstName' placeholder="name@example.com" />
-                        <label htmlFor="firstName">First Name</label>
+                        <input type="text" className="inputField" id="firstName" name='firstName' placeholder="Nhập Họ" />
                     </div>
                     <div className="w-100 form-floating">
-                        <input type="text" className="form-control" id="lastName" name='lastName' placeholder="name@example.com" />
-                        <label htmlFor="floatingInput">Last Name</label>
+                        <input type="text" className="inputField" id="lastName" name='lastName' placeholder="Nhập Tên" />
                     </div>
                     <div className="w-100 form-floating">
-                        <select id='gender' defaultValue={""} className="form-select" aria-label="Default select example">
-                            <option disabled value="">Gender</option>
-                            <option value="0">Male</option>
-                            <option value="1">Female</option>
+                        <select id='gender' defaultValue={""} className="selector inputField" aria-label="Default select example">
+                            <option disabled value="">Giới tính</option>
+                            <option value="0">Nam</option>
+                            <option value="1">Nữ</option>
                         </select>
                     </div>
                 </div>
-                <div className='d-flex column-gap-3  input-container'>
-                    <div className="form-floating info-input">
-                        <input type="email" className="form-control" id="email" name='email' placeholder="name@example.com" />
-                        <label htmlFor="email">Email</label>
+                <div className='input-container-enroll'>
+                    <div className="info-input">
+                        <input type="email" className="inputField" id="email" name='email' placeholder="Email" />
                     </div>
-                    <div className="form-floating info-input">
-                        <input type="password" className="form-control" id="password" name='password' placeholder="name@example.com" />
-                        <label htmlFor="password">Passwords</label>
+                    <div className="info-input">
+                        <input type="password" className="inputField" id="password" name='password' placeholder="Mật khẩu" />
                     </div>
                 </div>
-                <div className="w-100 form-floating info-input-avatar">
-                        <input type="text" className="form-control" id="avatar" name='avatar' placeholder="name@example.com" />
-                        <label htmlFor="avatar">Avatar link</label>
+                <div className="info-input-avatar">
+                        <input type="text" className="inputField" id="avatar" name='avatar' placeholder="Linh avatar" />
                 </div>
-                <button className="w-100 btn btn-lg btn-primary" type="submit">Sign up</button>
-                <a href="/auth" className='textWhite'>Back to Login</a>
+                <button className="signUp-btn" type="submit">Đăng ký</button>
+                <a href="/auth" className='textWhite'>Trở về đăng nhập</a>
             </form>
         </main>
     );

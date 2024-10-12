@@ -12,6 +12,7 @@ import ExamsList from '../pages/global/exams/ExamsList'
 import Auth from '../pages/global/auth/Auth'
 import Enroll from '../pages/global/enroll/Enroll'
 import TestingPage from '../pages/global/testing/TestingPage'
+import HistoryExam from '../pages/global/history/HistoryExam'
 
 export default function MainRoutes() {
   return (
@@ -22,6 +23,7 @@ export default function MainRoutes() {
             <Route path='' element={<Home/>}></Route>
             <Route path='exams' element={<ExamsList/>}></Route>
             <Route path='exams/:id' element={<TestingPage/>}></Route>
+            <Route path='history' element={<HistoryExam/>}></Route>
         </Route>
         <Route path='/admin-auth' element={<AdminAuth/>}></Route>
         <Route path='/admin/*' element={<AdminMain/>}>

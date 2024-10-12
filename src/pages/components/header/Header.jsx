@@ -45,22 +45,28 @@ export default function Header() {
     return (
         <header>
             <nav className="header-nav">
-                <img onClick={()=>{navigator("/")}} id='logo' src={Logo} alt="Logo" />
+                <img onClick={() => { navigator("/") }} id='logo' src={Logo} alt="Logo" />
                 <ul className="header-nav-account">
                     <li>
-                        <a id="admin-nav-link" className="nav-btn" onClick={() => { navigator("/admin-auth") }}>For administrator</a>
+                        <a id="admin-nav-link" className="nav-btn" onClick={() => { navigator("/admin-auth") }}>Dành cho quản trị viên</a>
                     </li>
                     {
-                        userInfo ? 
+                        userInfo ?
                             <div className='accInfoBox'>
-                                <img src={userInfo.avatar} alt="" />
-                                <li><a className="nav-btn" onClick={handleLogout}>Log out</a></li>
+                                <span>Chào,<span className='userName' onClick={()=>{
+                                    document.querySelector('.accSubmenu').classList.toggle('active');
+                                }}>{userInfo.first_name}</span></span>
+                                <img className='accAvatar' src={userInfo.avatar} alt="" />
+                                <div className='accSubmenu'>
+                                    <li><a className="nav-btn" onClick={()=>{navigator("/history")}}>Lịch sử thi</a></li>
+                                    <li><a className="nav-btn" onClick={handleLogout}>Đăng xuất</a></li>
+                                </div>
                             </div>
-                         :
-                            <div  className='accInfoBox'>
-                                <li><a className="nav-btn" onClick={() => { navigator("/auth") }}>Log in</a></li>
+                            :
+                            <div className='accInfoBox'>
+                                <li><a className="nav-btn" onClick={() => { navigator("/auth") }}>Đăng nhập</a></li>
                                 <li>
-                                    <a id="signup-nav-link" className="nav-btn" onClick={() => { navigator("/enroll") }}>Sign up</a>
+                                    <a id="signup-nav-link" className="nav-btn" onClick={() => { navigator("/enroll") }}>Đăng ký</a>
                                 </li>
                             </div>
                     }

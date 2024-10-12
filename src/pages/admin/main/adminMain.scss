@@ -4,10 +4,11 @@
     box-sizing: border-box;
     font-family: "Open Sans", sans-serif;
 }
-.page-container{
+.page-container-admin{
     width: 100%;
     display: flex;
     color: #eee;
+    overflow: hidden;
 }
 .page-left{
     width: 20%;

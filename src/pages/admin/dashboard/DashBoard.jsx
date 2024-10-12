@@ -8,10 +8,17 @@ export default function DashBoard() {
     const [adminInfo, setAdminInfo] = useState({})
     const secretKey = new TextEncoder().encode('don tShare')
     useEffect(()=>{
-        async function fetchAdminInfo(){
-            if (localStorage.getItem('token-admin')) {
-                const { payload } = await jwtVerify(localStorage.getItem('token'), secretKey)
-                setAdminInfo(payload.result)
+        async function fetchAdminInfo() {
+            const token = localStorage.getItem('token-admin');
+            if (token) {
+                try {
+                    const { payload } = await jwtVerify(token, secretKey);
+                    setAdminInfo(payload.result);
+                } catch (error) {
+                    console.error('Lỗi xác thực JWT:', error);
+                }
+            } else {
+                console.log('Không tìm thấy token');
             }
         }
         fetchAdminInfo()

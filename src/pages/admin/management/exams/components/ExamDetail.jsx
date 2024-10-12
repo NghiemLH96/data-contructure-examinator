@@ -78,8 +78,10 @@ export default function ExamDetail({setDetailPopup,currentExam}) {
                                     <th scope="row">{(currentPage - 1) * pagesSize + index + 1}</th>
                                     <td>{item.id}</td>
                                     <td>{item.ques}</td>
-                                    <td>{item.bloom == "2" ? "Remember" :
-                                                item.bloom == "1" ? "Understand" : 'Other'}</td>
+                                    <td>{item.bloom == "1" ? "Hiểu" :
+                                        item.bloom == "2" ? "Nhớ" :
+                                        item.bloom == "3" ? "Vận dụng":
+                                        item.bloom == "4" ? "Phân tích": 'Other'}</td>
                                     <td>{item.ans.find((ans) => {
                                             ans.correct == true
                                             return ans

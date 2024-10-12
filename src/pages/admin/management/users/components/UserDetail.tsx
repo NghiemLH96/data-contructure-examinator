@@ -9,18 +9,18 @@ export default function UserDetail({ setDetailPopup, currentUser }) {
                     close
                 </span>
                 <section className='popup-box-content'>
-                    <h3>Question Detail</h3>
+                    <h3>Thông tin người dùng</h3>
                     <p><span>ID:</span> {currentUser.id}</p>
                     <div className='popup-box-content-info'>
-                        <p><span>First Name:</span> {currentUser.first_name}</p>
-                        <p><span>Last Name:</span> {currentUser.last_name}</p>
+                        <p><span>Tên:</span> {currentUser.first_name}</p>
+                        <p><span>Họ:</span> {currentUser.last_name}</p>
                     </div>
                     <div className='popup-box-content-info'>
                         <p><span>Email:</span> {currentUser.email}</p>
-                        <p><span>Gender:</span> {currentUser.gender == 1 ? 'Male' : 'Female'}</p>
+                        <p><span>Giới tính:</span> {currentUser.gender == 1 ? 'Nam' : 'Nữ'}</p>
                     </div>
                     <div className='popup-box-content-info'>
-                        <p><span>status:</span> {currentUser.active == 1 ? 'Active' : 'Inactive'}</p>
+                        <p><span>Trạng thái:</span> {currentUser.active == 1 ? 'Hoạt động' : 'Tạm ngưng'}</p>
                         <p><span>Role:</span> {currentUser.role == 1 ? 'Admin' : 'User'}</p>
                     </div>
                 </section>

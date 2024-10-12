@@ -32,10 +32,10 @@ export default function UsersManager() {
         const startIndex = (currentPage - 1) * pagesSize;
         const endIndex = startIndex + pagesSize;
         const lowerKeyWords = keywords.toLowerCase();
-
+        
         // Lọc kết quả tìm kiếm
         const searchResult = data.filter((item) => {
-            if (item.first_name.toLowerCase().includes(lowerKeyWords) || item.last_name.toLowerCase().includes(lowerKeyWords) || item.email.toLowerCase().includes(lowerKeyWords)) {
+            if (item.first_name?.toLowerCase().includes(lowerKeyWords) || item.last_name?.toLowerCase().includes(lowerKeyWords) || item.email?.toLowerCase().includes(lowerKeyWords)) {
                 return item
             }
         })
@@ -98,18 +98,18 @@ export default function UsersManager() {
             <div className='container'>
                 <table className="table table-striped table-hover table-sm caption-top align-middle table-bordered">
                     <caption
-                    >Users Management
-                        <input id='searching-input' onChange={(e) => { setKeywords(e.target.value) }} type="text" placeholder='Enter searching keyword' />
+                    >QUẢN LÝ NGƯỜI DÙNG
+                        <input id='searching-input' onChange={(e) => { setKeywords(e.target.value) }} type="text" placeholder='Nhập từ khóa tìm kiếm' />
                     </caption>
                     <thead className='table-dark'>
                         <tr>
                             <th scope="col">#</th>
                             <th scope="col">ID</th>
-                            <th scope="col">First name</th>
-                            <th scope="col">Last name</th>
-                            <th scope="col">Email</th>
-                            <th scope="col">Gender</th>
-                            <th scope="col">Action</th>
+                            <th scope="col">Tên</th>
+                            <th scope="col">Họ</th>
+                            <th scope="col">Địa chỉ Email</th>
+                            <th scope="col">GIới tính</th>
+                            <th scope="col">Thao tác</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -127,7 +127,7 @@ export default function UsersManager() {
                                         <td>{item.first_name}</td>
                                         <td>{item.last_name}</td>
                                         <td>{item.email}</td>
-                                        <td>{item.gender == 0 ? 'Female' : 'Male'}</td>
+                                        <td>{item.gender == 0 ? 'Nữ' : 'Nam'}</td>
                                         <td className='action-box'>
                                             <span className="material-symbols-outlined" onClick={() => {
                                                 setDetailPopup(!detailPopup)

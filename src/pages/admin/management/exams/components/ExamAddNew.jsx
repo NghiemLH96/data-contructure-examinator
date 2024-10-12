@@ -96,8 +96,10 @@ export default function ExamAddNew({ setAddNewExam }) {
             message.error("Điểm qua lớn hơn điểm tối đa");
             setPassScoreFieldVali(false);
         } else {
+            $("#maxscores").removeClass("error");
             $("#passscores").removeClass("error");
             setPassScoreFieldVali(true);
+            setMaxScoreFieldVali(true);
         }
     }
 
@@ -108,6 +110,8 @@ export default function ExamAddNew({ setAddNewExam }) {
             setMaxScoreFieldVali(false);
         } else {
             $("#maxscores").removeClass("error");
+            $("#passscores").removeClass("error");
+            setPassScoreFieldVali(true);
             setMaxScoreFieldVali(true);
         }
     }
@@ -167,50 +171,50 @@ export default function ExamAddNew({ setAddNewExam }) {
         <section className='popup-container'>
             <section className='popup-box'>
                 <form action="" className='popup-box-content' onSubmit={(event) => { addNewHandle(event) }}>
-                    <h3>Add New</h3>
+                    <h3>Thêm mới bài thi</h3>
                     <div className='input-group'>
-                        <label htmlFor="title">Title :<sup>*</sup></label>
-                        <input id='examTitle' name='title' type="text" maxLength={30} placeholder='Max 30 characters' onChange={() => { handleTitleChange() }} />
+                        <label htmlFor="title">Tiêu đề :<sup>*</sup></label>
+                        <input id='examTitle' name='title' type="text" maxLength={30} placeholder='Tối đa 30 ký tự' onChange={() => { handleTitleChange() }} />
                     </div>
                     <div className='input-group'>
-                        <label htmlFor="duration">Duration (mins) :<sup>*</sup></label>
-                        <input id='examDuration' name='duration' type="number" min={45} max={120} defaultValue={45} placeholder='45mins - 120mins'/>
+                        <label htmlFor="duration">Thời lượng (phút) :<sup>*</sup></label>
+                        <input id='examDuration' name='duration' type="number" min={45} max={120} defaultValue={45} placeholder='45 phút - 120 phút'/>
                     </div>
                     <div className='input-group'>
                         <div className='input-group-box'>
                             <div>
-                                <label htmlFor="maxscore">Max Score :<sup>*</sup></label>
-                                <input id='maxscores' defaultValue={0} name='maxscore' type="number" max={100} placeholder='Max 100' className={/* error.question ? 'error' :  */''} onChange={() => { handleMaxScoreChange() }} />
+                                <label htmlFor="maxscore">Điểm tối đa :<sup>*</sup></label>
+                                <input id='maxscores' defaultValue={0} name='maxscore' type="number" max={100} placeholder='Tối đa 100 điểm' className={/* error.question ? 'error' :  */''} onChange={() => { handleMaxScoreChange() }} />
                             </div>
                             <div>
-                                <label htmlFor="passscore">Pass Score :<sup>*</sup></label>
-                                <input id='passscores' defaultValue={0} name='passscore' type="number" max={100} placeholder='Max 100' className={/* error.question ? 'error' :  */''} onChange={() => { handlePassScoreChange() }} />
+                                <label htmlFor="passscore">Điểm đạt :<sup>*</sup></label>
+                                <input id='passscores' defaultValue={0} name='passscore' type="number" max={100} placeholder='Tối đa 100 điểm' className={/* error.question ? 'error' :  */''} onChange={() => { handlePassScoreChange() }} />
                             </div>
                         </div>
                     </div>
                     <div className='input-group'>
                         <div className='input-group-box'>
                             <div>
-                                <label htmlFor="quesCount">Questions Count :<sup>*</sup></label>
-                                <input id='quesCount' defaultValue={0} name='quesCount' type="number" maxLength={40} placeholder='Max 40 questions' className={/* error.question ? 'error' :  */''} onChange={() => { handleQuestionCountChange() }} />
+                                <label htmlFor="quesCount">Số lượng câu hỏi :<sup>*</sup></label>
+                                <input id='quesCount' defaultValue={0} name='quesCount' type="number" maxLength={40} placeholder='Tối đa 40 câu' className={/* error.question ? 'error' :  */''} onChange={() => { handleQuestionCountChange() }} />
                             </div>
                             <div className='countBox'>
-                                <b id='selectedPoints'>Checked point:{selectedPoints}</b>
-                                <b id='selectedQues'>Checked Ques:{selectedQues}</b>
+                                <b id='selectedPoints'>Điểm đã chọn:{selectedPoints}</b>
+                                <b id='selectedQues'>Câu hỏi đã chọn:{selectedQues}</b>
                             </div>
                         </div>
                     </div>
                     <div className='table-container'>
-                        <table className="table table-striped table-hover table-sm caption-top align-middle table-bordered choiceQuesTable">
+                        <table className="table table-responsive table-striped table-hover table-sm caption-top align-middle table-bordered choiceQuesTable">
                             <thead className='table-dark'>
                                 <tr>
                                     <th scope="col">Check</th>
                                     <th scope="col">#</th>
-                                    <th scope="col">Question ID</th>
-                                    <th scope="col">Question</th>
+                                    <th scope="col">ID câu hỏi</th>
+                                    <th scope="col">Câu hỏi</th>
                                     <th scope="col">Bloom</th>
-                                    <th scope="col">Correct answer</th>
-                                    <th scope="col">Score</th>
+                                    <th scope="col">Đáp án đúng</th>
+                                    <th scope="col">Điểm</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -225,8 +229,10 @@ export default function ExamAddNew({ setAddNewExam }) {
                                             <th scope="row">{index + 1}</th>
                                             <td>{item.id}</td>
                                             <td>{item.ques}</td>
-                                            <td>{item.bloom == "2" ? "Remember" :
-                                                item.bloom == "1" ? "Understand" : 'Other'}</td>
+                                            <td>{item.bloom == "1" ? "Hiểu" :
+                                                item.bloom == "2" ? "Nhớ" :
+                                                item.bloom == "3" ? "Vận dụng":
+                                                item.bloom == "4" ? "Phân tích": 'Other'}</td>
                                             <td>{item.ans.find((ans) => {
                                                 ans.correct == true
                                                 return ans
@@ -240,8 +246,8 @@ export default function ExamAddNew({ setAddNewExam }) {
                     </div>
                     <div className='input-group'>
                         <div className='btn-box'>
-                            <button type="submit" disabled={submitStatus} className="btn btn-dark">Submit</button>
-                            <button className="btn btn-danger" onClick={() => { setAddNewExam(false) }}>Cancel</button>
+                            <button type="submit" disabled={submitStatus} className="btn btn-dark">Thêm</button>
+                            <button className="btn btn-danger" onClick={() => { setAddNewExam(false) }}>Hủy</button>
                         </div>
                     </div>
                 </form>

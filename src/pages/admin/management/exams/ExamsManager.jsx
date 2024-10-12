@@ -69,8 +69,8 @@ export default function ExamsManager() {
     const [modal, contextHolder] = Modal.useModal();
     const handleActiveChange = (id, e) => {
         modal.confirm({
-            title: 'Status Change',
-            content: e ? 'Are you confirm to active this exam?' : 'Are you confirm to inactive this exam?',
+            title: 'Thay đổi trạng thái bài thi',
+            content: e ? 'Bạn chắc chắn muốn kích hoạt bài thi này?' : 'Bạn chắc chắn muốn tạm ngưng bài thi này?',
             okText: 'Yes',
             cancelText: 'No',
             onOk: () => {
@@ -129,28 +129,28 @@ export default function ExamsManager() {
             <div className='container'>
                 <table className="table table-striped table-hover table-sm caption-top align-middle table-bordered">
                     <caption
-                    >Exams Management
-                        <button className='add-new-button' onClick={() => { setAddNewExam(!addNewExam) }}>Add new <span className="material-symbols-outlined">add</span></button>
-                        <input id='searching-input' onChange={(e) => { setKeywords(e.target.value) }} type="text" placeholder='Enter searching keyword' />
+                    >QUẢN LÝ BÀI THI
+                        <button className='add-new-button' onClick={() => { setAddNewExam(!addNewExam) }}>Thêm mới <span className="material-symbols-outlined">add</span></button>
+                        <input id='searching-input' onChange={(e) => { setKeywords(e.target.value) }} type="text" placeholder='Nhập từ khóa tìm kiếm' />
                     </caption>
                     <thead className='table-dark'>
                         <tr>
                             <th scope="col">#</th>
                             <th scope="col">ID</th>
-                            <th scope="col">Title</th>
-                            <th scope="col">Question Count</th>
-                            <th scope="col">Maximum Score</th>
-                            <th scope="col">Pass Score</th>
-                            <th scope="col">Create At</th>
-                            <th scope="col">Update At</th>
-                            <th scope="col">Action</th>
+                            <th scope="col">Tiêu đề</th>
+                            <th scope="col">Số câu hỏi</th>
+                            <th scope="col">Điểm tối đa</th>
+                            <th scope="col">Điểm đạt</th>
+                            <th scope="col">Thời gian khởi tạo</th>
+                            <th scope="col">Thời gian cập nhật</th>
+                            <th scope="col">Thao tác</th>
                         </tr>
                     </thead>
                     <tbody>
                         {
                             users.length === 0 ?
                                 <tr>
-                                    <td colSpan="7" className="empty-table-message">
+                                    <td colSpan="9" className="empty-table-message">
                                         No data available.
                                     </td>
                                 </tr> :
@@ -178,7 +178,7 @@ export default function ExamsManager() {
                                                 edit_square
                                             </span>
                                             <Switch size='small' className='switch' checked={item.status} onChange={(e) => handleActiveChange(item.id, e)} />
-                                            <span class="material-symbols-outlined" onClick={()=>{ handleDelete(item.id) }}>
+                                            <span className="material-symbols-outlined" onClick={()=>{ handleDelete(item.id) }}>
                                                 delete
                                             </span>
                                         </td>

@@ -52,26 +52,24 @@ export default function Auth() {
     return (
         <main className="form-signin">
             <form id='form'>
-                <img className="mb-4 logo" src={logo} alt="" width="150" />
-                <h1 className="h3 mb-3 fw-normal textWhite formTitle">Please sign in</h1>
+                <img className="logo" src={logo} alt="" width="150" />
+                <h1 className="formTitle textWhite">Đăng nhập</h1>
 
                 <div className="w-100 form-floating">
-                    <input type="email" className="form-control" id="floatingInput" name='email' placeholder="name@example.com" />
-                    <label htmlFor="floatingInput">Email address</label>
+                    <input type="email" className='inputField' name='email' placeholder="Nhập địa chỉ email" />
                 </div>
                 <div className="w-100 form-floating">
-                    <input type="password" className="form-control" id="floatingPassword" name='password' placeholder="Password" />
-                    <label htmlFor="floatingPassword">Password</label>
+                    <input type="password" className='inputField' name='password' placeholder="Nhập mật khẩu" />
                 </div>
 
-                <div className="w-100 checkbox mb-3 text-center rememberBox">
+                <div className="rememberBox">
                     <label className='textWhite'>
                         <input type="checkbox" value="remember-me" /> Remember me
                     </label>
                     <a href="" className='textWhite'>Forget passwords</a>
                 </div>
-                <button className="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
-                <a href="/enroll" className='textWhite'>Create a new account</a>
+                <button type="submit" className='submitBtn'>Đăng nhập</button>
+                <a href="/enroll" className='textWhite'>Chưa có tài khoản?</a>
             </form>
         </main>
     );

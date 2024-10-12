@@ -79,7 +79,9 @@
     }
 }
 
-
+th{
+    text-wrap: nowrap;
+}
 .error {
     border: rgb(255, 143, 143) 2px solid !important;
 }
@@ -163,4 +165,5 @@
     column-gap: 40px;
     justify-content: center;
     align-items: center;
+    font-size: 14px;
 }

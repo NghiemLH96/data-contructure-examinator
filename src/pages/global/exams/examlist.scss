@@ -1,18 +1,57 @@
 .pageContainer {
     width: 100%;
-    height: 100vh;
     background-color: #ffffff;
 
     .pageSection {
         padding: 50px 150px;
-        h4{
+        h4 {
             font-size: 40px;
             font-weight: 700;
         }
-        .testIcon{
+
+        .testIcon {
             cursor: pointer;
-            &:hover{
+            &:hover {
                 color: yellowgreen;
+            }
+        }
+    }
+}
+
+@media (max-width: 1025px) {
+    .pageContainer {
+        .pageSection {
+            padding: 50px 50px;
+            font-size: 13px;
+            h4 {
+                font-size: 35px; // Giảm kích thước font cho màn hình nhỏ hơn
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .pageContainer {
+        .pageSection {
+            padding: 20px 10px; // Giảm padding cho màn hình nhỏ hơn
+            font-size: 10px;
+            td,th,tr{
+                padding: 4px;
+            }
+            h4 {
+                font-size: 25px; // Giảm kích thước font thêm nữa
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .pageContainer {
+        .pageSection {
+            padding: 5px 5px; // Giảm padding cho màn hình di động
+            font-size: 8px;
+            h4 {
+                font-size: 20px; // Giảm kích thước font cho di động
             }
         }
     }

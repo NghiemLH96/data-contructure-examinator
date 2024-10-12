@@ -20,43 +20,43 @@ export default function EditPopup({setEditBoxDisplay, currentQuestion}) {
         let result = true;
         let initError = { ...error }
         if (e.target.chapter.value == '') {
-            initError.chapter = 'Chapter is required';
+            initError.chapter = 'Chương là bắt buộc';
             result = false;
         }
         if (e.target.bloom.value == '') {
-            initError.bloom = 'Bloom is required';
+            initError.bloom = 'Bloom là bắt buộc';
             result = false;
         }
         if (e.target.question.value == '') {
-            initError.question = "Question can't be empty";
+            initError.question = "Câu hỏi không được để trống";
             result = false;
         }
         if (e.target.answer1.value == '') {
-            initError.answer1 = "Answer 1 can't be empty";
+            initError.answer1 = "Đáp án A không được để trống";
             result = false;
         }
         if (e.target.answer2.value == '') {
-            initError.answer2 = "Answer 2 can't be empty";
+            initError.answer2 = "Đáp án B không được để trống";
             result = false;
         }
         if (e.target.answer3.value == '') {
-            initError.answer3 = "Answer 3 can't be empty";
+            initError.answer3 = "Đáp án C không được để trống";
             result = false;
         }
         if (e.target.answer4.value == '') {
-            initError.answer4 = "Answer 4 can't be empty";
+            initError.answer4 = "Đáp án D không được để trống";
             result = false;
         }
         if (e.target.score.value == '') {
-            initError.score = "Score is required";
+            initError.score = "Điểm số là bắt buộc";
             result = false;
         }
         if (e.target.level.value == '') {
-            initError.level = "Level is required";
+            initError.level = "Độ khó là bắt buộc";
             result = false;
         }
         if (e.target.correct.value == '') {
-            initError.correct = "Please choose the correct answer";
+            initError.correct = "Mời chọn đáp án đúng";
             result = false;
         }
         if (!result) {
@@ -100,13 +100,13 @@ export default function EditPopup({setEditBoxDisplay, currentQuestion}) {
             body: JSON.stringify(newQuestion)
           })
           .then(res => {
-            message.success('Question update successfully')
+            message.success('Cập nhật câu hỏi thành công')
             console.log(res);
             
             setEditBoxDisplay(false)
           })
           .catch(err => {
-            message.error('Question update failed')
+            message.error('Cập nhật câu hỏi thất bại')
             console.log(err);
             
           })
@@ -115,70 +115,73 @@ export default function EditPopup({setEditBoxDisplay, currentQuestion}) {
         <section className='popup-container'>
             <section className='popup-box'>
                 <form action="" className='popup-box-content' onSubmit={(event) => { editHandle(event) }}>
-                    <h3>Edit Detail</h3>
+                    <h3>Cập nhật câu hỏi</h3>
                     <div className='input-group'>
                         <div className='input-group-box'>
                             <div>
-                                <label htmlFor="chapter">Chapter : <sup>*</sup></label>
+                                <label htmlFor="chapter">Chương : <sup>*</sup></label>
                                 <select name="chapter" id="" defaultValue={`${currentQuestion.chapter}`} className={error.chapter ? 'error' : ''} onChange={() => { setError({ ...error, chapter: null }) }}>
-                                    <option value='' disabled>Select chapter</option>
-                                    <option value='1'>Chapter 1 :....</option>
-                                    <option value='2'>Chapter 2 :....</option>
-                                    <option value='3'>Chapter 3 :....</option>
-                                    <option value='4'>Chapter 4 :....</option>
-                                    <option value='5'>Chapter 5 :....</option>
-                                    <option value='6'>Chapter 6 :....</option>
+                                    <option value='' disabled>Chọn chương</option>
+                                    <option value='1'>Chương 1 :Tổng quan</option>
+                                    <option value='2'>Chương 2 :Sắp xếp và tìm kiếm</option>
+                                    <option value='3'>Chương 3 :Danh sách liên kết</option>
+                                    <option value='4'>Chương 4 :Ngăn xếp và hàng đợi</option>
+                                    <option value='5'>Chương 5 :Cây</option>
+                                    <option value='6'>Chương 6 :Bảng băm</option>
                                 </select>
                             </div>
                             <div>
                                 <label htmlFor="bloom">Bloom :<sup>*</sup></label>
                                 <select name="bloom" id="" defaultValue={`${currentQuestion.bloom}`} className={error.bloom ? 'error' : ''} onChange={() => { setError({ ...error, bloom: null }) }}>
-                                    <option value="" disabled>Select Bloom</option>
-                                    <option value='1'>Understand</option>
-                                    <option value='2'>Remember</option>
+                                <option value="" disabled>Bloom</option>
+                                    <option value='1'>Hiểu</option>
+                                    <option value='2'>Nhớ</option>
+                                    <option value='3'>Vận dụng</option>
+                                    <option value='4'>Phân tích</option>
+                                    <option value='5'>Khác</option>
                                 </select>
                             </div>
                         </div>
                         <div>
-                            <label htmlFor="question">Question :<sup>*</sup></label>
+                            <label htmlFor="question">Câu hỏi :<sup>*</sup></label>
                             <input name='question' defaultValue={currentQuestion.ques} type="text" maxLength={300} placeholder='Max 300 characters' className={error.question ? 'error' : ''} onChange={() => { setError({ ...error, question: null }) }} />
                         </div>
                         <div className='input-group-box'>
                             <div className='ans-box'>
-                                <label htmlFor="answer">Answer 1 :<sup>*</sup></label>
+                                <label htmlFor="answer">Đáp án A :<sup>*</sup></label>
                                 <div className='ans-input-box'>
-                                    <input name='answer1' defaultValue={currentQuestion.ans[0].content} type="text" maxLength={50} placeholder='Max 50 characters' className={error.answer1 ? 'error' : ''} onChange={() => { setError({ ...error, answer1: null }) }} />
-                                    <input name='correct' checked={currentQuestion.ans[0].correct} type="radio" value={1} className={error.correct ? 'add-ans-radio error' : 'add-ans-radio'} onChange={() => { setError({ ...error, correct: null }) }} /></div>
+                                    <input name='answer1' defaultValue={currentQuestion.ans[0].content} type="text" placeholder='Nhập đáp án' className={error.answer1 ? 'error' : ''} onChange={() => { setError({ ...error, answer1: null }) }} />
+                                    <input name='correct' defaultChecked={currentQuestion.ans[0].correct} type="radio" value={1} className={error.correct ? 'add-ans-radio error' : 'add-ans-radio'} onChange={() => { setError({ ...error, correct: null }) }} /></div>
                             </div>
                             <div className='ans-box'>
-                                <label htmlFor="answer">Answer 2 :<sup>*</sup></label>
+                                <label htmlFor="answer">Đáp án B :<sup>*</sup></label>
                                 <div className='ans-input-box'>
-                                    <input name='answer2' defaultValue={currentQuestion.ans[1].content} type="text" maxLength={50} placeholder='Max 50 characters' className={error.answer2 ? 'error' : ''} onChange={() => { setError({ ...error, answer2: null }) }} />
-                                    <input name='correct' checked={currentQuestion.ans[1].correct} type="radio" value={2} className={error.correct ? 'add-ans-radio error' : 'add-ans-radio'} onChange={() => { setError({ ...error, correct: null }) }} />
+                                    <input name='answer2' defaultValue={currentQuestion.ans[1].content} type="text" placeholder='Nhập đáp án' className={error.answer2 ? 'error' : ''} onChange={() => { setError({ ...error, answer2: null }) }} />
+                                    <input name='correct' defaultChecked={currentQuestion.ans[1].correct} type="radio" value={2} className={error.correct ? 'add-ans-radio error' : 'add-ans-radio'} onChange={() => { setError({ ...error, correct: null }) }} />
                                 </div>
                             </div>
                             <div className='ans-box'>
-                                <label htmlFor="answer">Answer 3 :<sup>*</sup></label>
+                                <label htmlFor="answer">Đáp án C :<sup>*</sup></label>
                                 <div className='ans-input-box'>
-                                    <input name='answer3' defaultValue={currentQuestion.ans[2].content} type="text" maxLength={50} placeholder='Max 50 characters' className={error.answer3 ? 'error' : ''} onChange={() => { setError({ ...error, answer3: null }) }} />
-                                    <input name='correct' checked={currentQuestion.ans[2].correct} type="radio" value={4} className={error.correct ? 'add-ans-radio error' : 'add-ans-radio'} onChange={() => { setError({ ...error, correct: null }) }} />
+                                    <input name='answer3' defaultValue={currentQuestion.ans[2].content} type="text" placeholder='Nhập đáp án' className={error.answer3 ? 'error' : ''} onChange={() => { setError({ ...error, answer3: null }) }} />
+                                    <input name='correct' defaultChecked={currentQuestion.ans[2].correct} type="radio" value={4} className={error.correct ? 'add-ans-radio error' : 'add-ans-radio'} onChange={() => { setError({ ...error, correct: null }) }} />
                                 </div>
                             </div>
                             <div className='ans-box'>
-                                <label htmlFor="answer">Answer 4 :<sup>*</sup></label>
+                                <label htmlFor="answer">Đáp án D :<sup>*</sup></label>
                                 <div className='ans-input-box'>
-                                    <input name='answer4' defaultValue={currentQuestion.ans[3].content} type="text" maxLength={50} placeholder='Max 50 characters' className={error.answer4 ? 'error' : ''} onChange={() => { setError({ ...error, answer4: null }) }} />
-                                    <input name='correct' checked={currentQuestion.ans[3].correct} type="radio" value={4} className={error.correct ? 'add-ans-radio error' : 'add-ans-radio'} onChange={() => { setError({ ...error, correct: null }) }} />
+                                    <input name='answer4' defaultValue={currentQuestion.ans[3].content} type="text" placeholder='Nhập đáp án' className={error.answer4 ? 'error' : ''} onChange={() => { setError({ ...error, answer4: null }) }} />
+                                    <input name='correct' defaultChecked={currentQuestion.ans[3].correct} type="radio" value={4} className={error.correct ? 'add-ans-radio error' : 'add-ans-radio'} onChange={() => { setError({ ...error, correct: null }) }} />
                                 </div>
                             </div>
                         </div>
                         <div>
-                            <label htmlFor="score">Score :<sup>*</sup></label>
-                            <input type="number" name='score' defaultValue={currentQuestion.score} min={0} max={4} placeholder='Max 4 points' className={error.score ? 'error' : ''} onChange={() => { setError({ ...error, score: null }) }} />
+                            <label htmlFor="score">Điểm :<sup>*</sup></label>
+                            <input type="number" name='score' defaultValue={currentQuestion.score} min={0} max={4} placeholder='Tối đa 4 điểm' className={error.score ? 'error' : ''} onChange={() => { setError({ ...error, score: null }) }} />
                         </div>
                         <div>
-                            <label htmlFor="level">Level :<sup>*</sup></label>
-                            <input type="number" name='level' defaultValue={currentQuestion.level} min={0} max={4} placeholder='Max 4 level' className={error.level ? 'error' : ''} onChange={() => { setError({ ...error, level: null }) }} />
+                            <label htmlFor="level">Độ khó :<sup>*</sup></label>
+                            <input type="number" name='level' defaultValue={currentQuestion.level} min={0} max={4} placeholder='Tối đa 4 mức' className={error.level ? 'error' : ''} onChange={() => { setError({ ...error, level: null }) }} />
                         </div>
                         <div className='error-msg-box'>
                             {error.chapter && <p className='error-msg'>{error.chapter}</p>}
@@ -190,8 +193,8 @@ export default function EditPopup({setEditBoxDisplay, currentQuestion}) {
                             {error.correct && <p className='error-msg'>{error.correct}</p>}
                         </div>
                         <div className='btn-box'>
-                            <button type="submit" className="btn btn-dark">Submit</button>
-                            <button className="btn btn-danger" onClick={() => { setEditBoxDisplay(false) }}>Cancel</button>
+                            <button type="submit" className="btn btn-dark">Cập nhật</button>
+                            <button className="btn btn-danger" onClick={() => { setEditBoxDisplay(false) }}>Hủy</button>
                         </div>
                     </div>
                 </form>

@@ -5,7 +5,7 @@ import { message, Modal } from 'antd'
 import './examlist.scss'
 import { useNavigate } from 'react-router-dom'
 import { jwtVerify } from 'jose'
-import FnPageBanner from '../../components/banner/FnPageBanner'
+import ExamsPageBanner from '../../components/banner/ExamsPageBanner'
 export default function ExamsList() {
     const secretKey = new TextEncoder().encode('don tShare')
     const navigator = useNavigate();
@@ -15,7 +15,12 @@ export default function ExamsList() {
             try {
                 const checking = await jwtVerify(token, secretKey);
                 if (checking.payload) {
-                    return true
+                    if (checking.payload.result.active) {
+                        return true
+                    } else {
+                        message.error('Tài khoản của bạn đã bị khóa')
+                        return false
+                    }
                 }else{
                     return false
                 }
@@ -29,7 +34,10 @@ export default function ExamsList() {
     useEffect(() => {
         fetch('http://localhost:3000/exams')
             .then(res => res.json())
-            .then(data => setExams(data))
+            .then(data => {
+                const activeData = data.filter(item => item.status == true)
+                setExams(activeData)
+            })
             .catch(err => message.error("Get data failure"))
     }, [])
 
@@ -49,22 +57,22 @@ export default function ExamsList() {
 
     return (
         <div>
-            <FnPageBanner/>
+            <ExamsPageBanner/>
             <div className='pageContainer'>
                 <section className='pageSection table-responsive'>
-                    <h4>Choice Exams</h4>
-                    <table className="table table-striped align-middle table-hover">
+                    <h4>Lựa chọn bài thi</h4>
+                    <table className="table table-striped align-middle table-hover table-responsive">
                         <thead className='table-dark'>
                             <tr>
                                 <th scope="col">#</th>
-                                <th scope="col">Title</th>
-                                <th scope="col">Maximum Scores</th>
-                                <th scope="col">Pass Scores</th>
-                                <th scope="col">Duration (mins)</th>
-                                <th scope="col">questions</th>
-                                <th scope="col">Distribute At</th>
-                                <th scope="col">Updata At</th>
-                                <th scope="col">Test</th>
+                                <th scope="col">Tiêu đề</th>
+                                <th scope="col">Điểm tối đa</th>
+                                <th scope="col">Điểm đạt</th>
+                                <th scope="col">Thời lượng (phút)</th>
+                                <th scope="col">Câu hỏi</th>
+                                <th scope="col" className='dp-none-768'>Thời gian phát hành</th>
+                                <th scope="col" className='dp-none-768'>Thời gian cập nhật</th>
+                                <th scope="col">Bắt đầu thi</th>
                             </tr>
                         </thead>
                         <tbody>

@@ -1,836 +1,524 @@
 {
   "questions": [
     {
-      "id": "1",
-      "ques": "Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum. Proin eu mi. Nulla ac enim.",
+      "id": "902541",
+      "ques": "Trong phương pháp nối kết trực tiếp (direct chaining), các nút bị băm cùng địa chỉ (các nút bị xung đột) được gom thành gì?",
       "ans": [
         {
-          "correct": true,
-          "content": "Nulla nisl.true"
-        },
-        {
           "correct": false,
-          "content": "Nulla nisl2."
+          "content": "Được gom thành mỗi tập hợp các số thực"
         },
-        {
-          "correct": false,
-          "content": "Nulla nisl3."
-        },
-        {
-          "correct": false,
-          "content": "Nulla nisl4."
-        }
-      ],
-      "bloom": 3,
-      "score": 2,
-      "chapter": 5,
-      "level": 4
-    },
-    {
-      "id": "2",
-      "ques": "In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.",
-      "ans": [
         {
           "correct": true,
-          "content": "Proin at turpis a pede posuere nonummy. Integer non velit. true"
+          "content": "Được gom thành một danh sách liên kết"
         },
         {
           "correct": false,
-          "content": "Proin at turpis a pede posuere nonummy. Integer non velit.2"
+          "content": "Được gom thành mỗi tập hợp các số nguyên"
         },
         {
           "correct": false,
-          "content": "Proin at turpis a pede posuere nonummy. Integer non velit.3"
-        },
-        {
-          "correct": false,
-          "content": "Proin at turpis a pede posuere nonummy. Integer non velit.4"
+          "content": "Được gom thành mỗi tập hợp các cây"
         }
       ],
+      "score": 1,
       "bloom": 2,
-      "score": 2,
-      "chapter": 3,
-      "level": 1
-    },
-    {
-      "id": "3",
-      "ques": "Vivamus tortor. Duis mattis egestas metus. Aenean fermentum.",
-      "ans": [
-        {
-          "correct": true,
-          "content": "Proin leo odio, porttitor id, consequat in, consequat ut, nulla.1 true"
-        },
-        {
-          "correct": false,
-          "content": "Proin leo odio, porttitor id, consequat in, consequat ut, nulla.2"
-        },
-        {
-          "correct": false,
-          "content": "Proin leo odio, porttitor id, consequat in, consequat ut, nulla.3"
-        },
-        {
-          "correct": false,
-          "content": "Proin leo odio, porttitor id, consequat in, consequat ut, nulla.4"
-        }
-      ],
-      "bloom": 4,
-      "score": 2,
-      "chapter": 1,
-      "level": 1
-    },
-    {
-      "id": "4",
-      "ques": "Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl. Aenean lectus.",
-      "ans": [
-        {
-          "correct": true,
-          "content": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.1"
-        },
-        {
-          "correct": false,
-          "content": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.2"
-        },
-        {
-          "correct": false,
-          "content": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.3"
-        },
-        {
-          "correct": false,
-          "content": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.4"
-        }
-      ],
-      "bloom": 1,
-      "score": 2,
-      "chapter": 5,
-      "level": 1
-    },
-    {
-      "id": "5",
-      "ques": "Duis at velit eu est congue elementum.",
-      "ans": [
-        {
-          "correct": true,
-          "content": "Quisque porta volutpat erat. Quisque erat eros..1true"
-        },
-        {
-          "correct": false,
-          "content": "Quisque porta volutpat erat. Quisque erat eros..2"
-        },
-        {
-          "correct": false,
-          "content": "Quisque porta volutpat erat. Quisque erat eros..3"
-        },
-        {
-          "correct": false,
-          "content": "Quisque porta volutpat erat. Quisque erat eros..4"
-        }
-      ],
-      "bloom": 1,
-      "score": 2,
-      "chapter": 3,
-      "level": 1
-    },
-    {
-      "id": "6",
-      "ques": "Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam.",
-      "ans": [
-        {
-          "correct": true,
-          "content": "Etiam faucibus cursus urna. Ut tellus.1 true"
-        },
-        {
-          "correct": false,
-          "content": "Etiam faucibus cursus urna. Ut tellus.2"
-        },
-        {
-          "correct": false,
-          "content": "Etiam faucibus cursus urna. Ut tellus.3"
-        },
-        {
-          "correct": false,
-          "content": "Etiam faucibus cursus urna. Ut tellus.4"
-        }
-      ],
-      "bloom": 5,
-      "score": 2,
       "chapter": 3,
       "level": 2
     },
     {
-      "id": "7",
-      "ques": "In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.",
+      "id": "178836",
+      "ques": "Với giá trị A+B, nếu viết dưới dạng Prefix thì sẽ được viết như thế nào?",
       "ans": [
         {
           "correct": true,
-          "content": "Morbi quis tortor id nulla ultrices aliquet.1 true"
+          "content": "+AB"
         },
         {
           "correct": false,
-          "content": "Morbi quis tortor id nulla ultrices aliquet.2"
+          "content": "AB+"
         },
         {
           "correct": false,
-          "content": "Morbi quis tortor id nulla ultrices aliquet.3"
+          "content": "A++B"
         },
         {
           "correct": false,
-          "content": "Morbi quis tortor id nulla ultrices aliquet.4"
+          "content": "A+B"
         }
       ],
-      "bloom": 1,
-      "score": 2,
-      "chapter": 2,
-      "level": 4
-    },
-    {
-      "id": "8",
-      "ques": "In eleifend quam a odio. In hac habitasse platea dictumst. Maecenas ut massa quis augue luctus tincidunt.",
-      "ans": [
-        {
-          "correct": true,
-          "content": "Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. true"
-        },
-        {
-          "correct": false,
-          "content": "Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue."
-        },
-        {
-          "correct": false,
-          "content": "Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue."
-        },
-        {
-          "correct": false,
-          "content": "Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue."
-        }
-      ],
-      "bloom": 3,
-      "score": 2,
-      "chapter": 4,
-      "level": 2
-    },
-    {
-      "id": "9",
-      "ques": "In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem. Duis aliquam convallis nunc.",
-      "ans": [
-        {
-          "correct": true,
-          "content": "Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam.true"
-        },
-        {
-          "correct": false,
-          "content": "Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam."
-        },
-        {
-          "correct": false,
-          "content": "Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam."
-        },
-        {
-          "correct": false,
-          "content": "Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam."
-        }
-      ],
-      "bloom": 1,
-      "score": 2,
-      "chapter": 4,
-      "level": 2
-    },
-    {
-      "id": "10",
-      "ques": "Donec semper sapien a libero. Nam dui. Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis.",
-      "ans": [
-        {
-          "correct": true,
-          "content": "Donec posuere metus vitae ipsum.true"
-        },
-        {
-          "correct": false,
-          "content": "Donec posuere metus vitae ipsum."
-        },
-        {
-          "correct": false,
-          "content": "Donec posuere metus vitae ipsum."
-        },
-        {
-          "correct": false,
-          "content": "Donec posuere metus vitae ipsum."
-        }
-      ],
-      "bloom": 5,
-      "score": 2,
-      "chapter": 4,
-      "level": 1
-    },
-    {
-      "id": "11",
-      "ques": "Phasellus sit amet erat. Nulla tempus.",
-      "ans": [
-        {
-          "correct": true,
-          "content": "Sed ante. Vivamus tortor. true"
-        },
-        {
-          "correct": false,
-          "content": "Sed ante. Vivamus tortor."
-        },
-        {
-          "correct": false,
-          "content": "Sed ante. Vivamus tortor."
-        },
-        {
-          "correct": false,
-          "content": "Sed ante. Vivamus tortor."
-        }
-      ],
-      "bloom": 5,
-      "score": 2,
-      "chapter": 1,
-      "level": 4
-    },
-    {
-      "id": "12",
-      "ques": "Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem. Duis aliquam convallis nunc.",
-      "ans": [
-        {
-          "correct": true,
-          "content": "Nam ultrices, libero non mattis pulvinar. true"
-        },
-        {
-          "correct": false,
-          "content": "Nam ultrices, libero non mattis pulvinar."
-        },
-        {
-          "correct": false,
-          "content": "Nam ultrices, libero non mattis pulvinar."
-        },
-        {
-          "correct": false,
-          "content": "Nam ultrices, libero non mattis pulvinar."
-        }
-      ],
+      "score": 1,
       "bloom": 2,
-      "score": 2,
-      "chapter": 5,
+      "chapter": 3,
       "level": 3
     },
     {
-      "id": "13",
-      "ques": "Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis. Fusce posuere felis sed lacus.",
+      "id": "812351",
+      "ques": "Trong cây nhị phân tìm kiếm cân bằng (cây AVL), có bao nhiêu trường hợp mất cân bằng khi thêm/xóa cây con",
       "ans": [
         {
-          "correct": true,
-          "content": "Duis at velit eu est congue elementum. true"
-        },
-        {
           "correct": false,
-          "content": "Duis at velit eu est congue elementum."
+          "content": "6"
         },
-        {
-          "correct": false,
-          "content": "Duis at velit eu est congue elementum."
-        },
-        {
-          "correct": false,
-          "content": "Duis at velit eu est congue elementum."
-        }
-      ],
-      "bloom": 2,
-      "score": 2,
-      "chapter": 2,
-      "level": 1
-    },
-    {
-      "id": "14",
-      "ques": "Fusce consequat.",
-      "ans": [
         {
           "correct": true,
-          "content": "Phasellus in felis. true"
+          "content": "3"
         },
         {
           "correct": false,
-          "content": "Phasellus in felis."
+          "content": "4"
         },
         {
           "correct": false,
-          "content": "Phasellus in felis."
-        },
-        {
-          "correct": false,
-          "content": "Phasellus in felis."
+          "content": "5"
         }
       ],
-      "bloom": 1,
-      "score": 2,
-      "chapter": 2,
-      "level": 3
-    },
-    {
-      "id": "15",
-      "ques": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue.",
-      "ans": [
-        {
-          "correct": true,
-          "content": "Fusce consequat. Nulla nisl. Nunc nisl. true"
-        },
-        {
-          "correct": false,
-          "content": "Fusce consequat. Nulla nisl. Nunc nisl."
-        },
-        {
-          "correct": false,
-          "content": "Fusce consequat. Nulla nisl. Nunc nisl."
-        },
-        {
-          "correct": false,
-          "content": "Fusce consequat. Nulla nisl. Nunc nisl."
-        }
-      ],
-      "bloom": 3,
-      "score": 2,
-      "chapter": 4,
-      "level": 2
-    },
-    {
-      "id": "16",
-      "ques": "In quis justo. Maecenas rhoncus aliquam lacus.",
-      "ans": [
-        {
-          "correct": true,
-          "content": "Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem. true"
-        },
-        {
-          "correct": false,
-          "content": "Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem."
-        },
-        {
-          "correct": false,
-          "content": "Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem."
-        },
-        {
-          "correct": false,
-          "content": "Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem."
-        }
-      ],
-      "bloom": 3,
-      "score": 2,
-      "chapter": 1,
-      "level": 5
-    },
-    {
-      "id": "17",
-      "ques": "In hac habitasse platea dictumst.",
-      "ans": [
-        {
-          "correct": true,
-          "content": "Maecenas rhoncus aliquam lacus. true"
-        },
-        {
-          "correct": false,
-          "content": "Maecenas rhoncus aliquam lacus."
-        },
-        {
-          "correct": false,
-          "content": "Maecenas rhoncus aliquam lacus."
-        },
-        {
-          "correct": false,
-          "content": "Maecenas rhoncus aliquam lacus."
-        }
-      ],
+      "score": 1,
       "bloom": 4,
-      "score": 2,
       "chapter": 5,
       "level": 2
     },
     {
-      "id": "18",
-      "ques": "Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc.",
+      "id": "992487",
+      "ques": "Trong thuật toán sắp xếp chèn nhị phân (binary insertion sort), trong mảng có kích thước n có bao nhiêu phép so sánh được thực hiện trong trường hợp xấu nhất?",
       "ans": [
         {
+          "correct": false,
+          "content": "n"
+        },
+        {
+          "correct": false,
+          "content": "logn"
+        },
+        {
+          "correct": false,
+          "content": "nlogn"
+        },
+        {
           "correct": true,
-          "content": "Etiam vel augue. Vestibulum rutrum rutrum neque. true"
-        },
-        {
-          "correct": false,
-          "content": "Etiam vel augue. Vestibulum rutrum rutrum neque."
-        },
-        {
-          "correct": false,
-          "content": "Etiam vel augue. Vestibulum rutrum rutrum neque."
-        },
-        {
-          "correct": false,
-          "content": "Etiam vel augue. Vestibulum rutrum rutrum neque."
+          "content": "1"
         }
       ],
+      "score": 1,
       "bloom": 2,
-      "score": 2,
-      "chapter": 4,
+      "chapter": 2,
       "level": 1
     },
     {
-      "id": "19",
-      "ques": "Fusce consequat. Nulla nisl. Nunc nisl. Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus.",
+      "id": "867430",
+      "ques": "Trong thực tế người ta giải quyết sự đụng độ theo hai phương pháp nào?",
       "ans": [
         {
+          "correct": false,
+          "content": "Phương pháp tìm kiếm tuyến tính (Linear Search) và phương pháp tìm kiếm nhị phân (Binary Search)"
+        },
+        {
+          "correct": false,
+          "content": "Phương pháp tăng kích thước bảng băm (Increasing Table Size) và phương pháp tái băm (Rehasing)"
+        },
+        {
+          "correct": false,
+          "content": "Phương pháp tăng giá trị (Incremental Method) và phương pháp tạo băm có chia (Division Hashing)"
+        },
+        {
           "correct": true,
-          "content": "Nulla justo. true"
-        },
-        {
-          "correct": false,
-          "content": "Nulla justo."
-        },
-        {
-          "correct": false,
-          "content": "Nulla justo."
-        },
-        {
-          "correct": false,
-          "content": "Nulla justo."
+          "content": "Phương pháp kết nối (chaining) và phương pháp địa chỉ mở (open addressing)"
         }
       ],
+      "score": 1,
+      "bloom": 2,
+      "chapter": 1,
+      "level": 1
+    },
+    {
+      "id": "83557",
+      "ques": "Trong giải thuật sắp xếp chọn trực tiếp (straingt selection sort), việc lặp lại quá trình cho dãy hiện hành đến khi dãy hiện hành còn bao nhiêu phần tử?",
+      "ans": [
+        {
+          "correct": false,
+          "content": "Không còn phần tử nào"
+        },
+        {
+          "correct": false,
+          "content": "Chỉ còn 2 phần tử"
+        },
+        {
+          "correct": false,
+          "content": "Chỉ còn 1 phần tử"
+        },
+        {
+          "correct": true,
+          "content": "Chỉ còn 3 phần tử"
+        }
+      ],
+      "score": 1,
       "bloom": 3,
-      "score": 2,
       "chapter": 2,
-      "level": 1
+      "level": 2
     },
     {
-      "id": "20",
-      "ques": "Pellentesque ultrices mattis odio. Donec vitae nisi. Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.",
+      "id": "545408",
+      "ques": "Định nghĩa về danh sách có nhiều mối liên hệ là gì?",
+      "ans": [
+        {
+          "correct": false,
+          "content": "Là một vật chứa các đối tượng mà việc thêm hoặc hủy một đối tượng được thực hiện ở cả 2 đầu của nó"
+        },
+        {
+          "correct": false,
+          "content": "Là một danh sách đơn (hoặc kép) mà phần tử cuối danh sách thay vì mang giá trị NULL, trỏ tới phần tử đầu danh sách"
+        },
+        {
+          "correct": false,
+          "content": "Là một vật chứa các đối tượng theo một trình tự nhất định"
+        },
+        {
+          "correct": true,
+          "content": "Là danh sách mà mỗi phần tử có nhiều khóa và chúng được liên kết với nhau theo từng loại khóa"
+        }
+      ],
+      "score": 1,
+      "bloom": 2,
+      "chapter": 3,
+      "level": 2
+    },
+    {
+      "id": "733798",
+      "ques": "Trong phương pháp băm kép (double hashing), khi khởi động bảng băm thì tất cả các trường key có giá trị bằng gì?",
       "ans": [
         {
           "correct": true,
-          "content": "Donec quis orci eget orci vehicula condimentum. true"
+          "content": "NULLKEY"
         },
         {
           "correct": false,
-          "content": "Donec quis orci eget orci vehicula condimentum."
+          "content": "NULL"
         },
         {
           "correct": false,
-          "content": "Donec quis orci eget orci vehicula condimentum."
+          "content": "-1"
         },
         {
           "correct": false,
-          "content": "Donec quis orci eget orci vehicula condimentum."
+          "content": "KEY"
         }
       ],
-      "bloom": 1,
-      "score": 2,
-      "chapter": 2,
-      "level": 4
-    },
-    {
-      "id": "21",
-      "ques": "Aliquam erat volutpat. In congue.",
-      "ans": [
-        {
-          "correct": true,
-          "content": "Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. true"
-        },
-        {
-          "correct": false,
-          "content": "Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy."
-        },
-        {
-          "correct": false,
-          "content": "Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy."
-        },
-        {
-          "correct": false,
-          "content": "Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy."
-        }
-      ],
-      "bloom": 1,
-      "score": 2,
-      "chapter": 4,
-      "level": 1
-    },
-    {
-      "id": "22",
-      "ques": "In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo. Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros.",
-      "ans": [
-        {
-          "correct": true,
-          "content": "Donec diam neque, vestibulum eget. true"
-        },
-        {
-          "correct": false,
-          "content": "Donec diam neque, vestibulum eget."
-        },
-        {
-          "correct": false,
-          "content": "Donec diam neque, vestibulum eget."
-        },
-        {
-          "correct": false,
-          "content": "Donec diam neque, vestibulum eget."
-        }
-      ],
-      "bloom": 4,
-      "score": 2,
-      "chapter": 2,
-      "level": 1
-    },
-    {
-      "id": "23",
-      "ques": "Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum. Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo.",
-      "ans": [
-        {
-          "correct": true,
-          "content": "Donec vitae nisi. true"
-        },
-        {
-          "correct": false,
-          "content": "Donec vitae nisi."
-        },
-        {
-          "correct": false,
-          "content": "Donec vitae nisi."
-        },
-        {
-          "correct": false,
-          "content": "Donec vitae nisi."
-        }
-      ],
-      "bloom": 5,
-      "score": 2,
-      "chapter": 2,
-      "level": 5
-    },
-    {
-      "id": "24",
-      "ques": "Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.",
-      "ans": [
-        {
-          "correct": true,
-          "content": "Cras in purus eu magna vulputate luctus. true"
-        },
-        {
-          "correct": false,
-          "content": "Cras in purus eu magna vulputate luctus."
-        },
-        {
-          "correct": false,
-          "content": "Cras in purus eu magna vulputate luctus."
-        },
-        {
-          "correct": false,
-          "content": "Cras in purus eu magna vulputate luctus."
-        }
-      ],
+      "score": 1,
       "bloom": 3,
-      "score": 2,
-      "chapter": 4,
+      "chapter": 6,
       "level": 3
     },
     {
-      "id": "25",
-      "ques": "In sagittis dui vel nisl.",
+      "id": "270121",
+      "ques": "Cấu trúc dữ liệu nào sau đây không phải là một cấu trúc dữ liệu trừu tượng?",
       "ans": [
         {
-          "correct": true,
-          "content": "Phasellus in felis. true"
-        },
-        {
           "correct": false,
-          "content": "Phasellus in felis."
+          "content": "Stack"
         },
-        {
-          "correct": false,
-          "content": "Phasellus in felis."
-        },
-        {
-          "correct": false,
-          "content": "Phasellus in felis."
-        }
-      ],
-      "bloom": 1,
-      "score": 2,
-      "chapter": 5,
-      "level": 2
-    },
-    {
-      "id": "26",
-      "ques": "Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti. Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum.",
-      "ans": [
         {
           "correct": true,
-          "content": "Vestibulum sed magna at nunc commodo placerat. Praesent blandit. Nam nulla. true"
+          "content": "Array"
         },
         {
           "correct": false,
-          "content": "Vestibulum sed magna at nunc commodo placerat. Praesent blandit. Nam nulla."
+          "content": "Tree"
         },
         {
           "correct": false,
-          "content": "Vestibulum sed magna at nunc commodo placerat. Praesent blandit. Nam nulla."
-        },
-        {
-          "correct": false,
-          "content": "Vestibulum sed magna at nunc commodo placerat. Praesent blandit. Nam nulla."
+          "content": "Queue"
         }
       ],
-      "bloom": 5,
-      "score": 2,
-      "chapter": 4,
-      "level": 2
-    },
-    {
-      "id": "27",
-      "ques": "Etiam justo. Etiam pretium iaculis justo. In hac habitasse platea dictumst.",
-      "ans": [
-        {
-          "correct": true,
-          "content": "Integer ac leo. true"
-        },
-        {
-          "correct": false,
-          "content": "Integer ac leo."
-        },
-        {
-          "correct": false,
-          "content": "Integer ac leo."
-        },
-        {
-          "correct": false,
-          "content": "Integer ac leo."
-        }
-      ],
-      "bloom": 3,
-      "score": 2,
-      "chapter": 2,
-      "level": 2
-    },
-    {
-      "id": "28",
-      "ques": "Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo. Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.",
-      "ans": [
-        {
-          "correct": true,
-          "content": "Vestibulum rutrum rutrum neque. Aenean auctor gravida sem. true"
-        },
-        {
-          "correct": false,
-          "content": "Vestibulum rutrum rutrum neque. Aenean auctor gravida sem."
-        },
-        {
-          "correct": false,
-          "content": "Vestibulum rutrum rutrum neque. Aenean auctor gravida sem."
-        },
-        {
-          "correct": false,
-          "content": "Vestibulum rutrum rutrum neque. Aenean auctor gravida sem."
-        }
-      ],
-      "bloom": 3,
-      "score": 2,
-      "chapter": 4,
-      "level": 1
-    },
-    {
-      "id": "29",
-      "ques": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus. Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio.",
-      "ans": [
-        {
-          "correct": true,
-          "content": "Nulla ut erat id mauris vulputate elementum. Nullam varius. true"
-        },
-        {
-          "correct": false,
-          "content": "Nulla ut erat id mauris vulputate elementum. Nullam varius."
-        },
-        {
-          "correct": false,
-          "content": "Nulla ut erat id mauris vulputate elementum. Nullam varius."
-        },
-        {
-          "correct": false,
-          "content": "Nulla ut erat id mauris vulputate elementum. Nullam varius."
-        }
-      ],
-      "bloom": 2,
-      "score": 2,
-      "chapter": 4,
-      "level": 4
-    },
-    {
-      "id": "30",
-      "ques": "Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.",
-      "ans": [
-        {
-          "correct": true,
-          "content": "Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui. true"
-        },
-        {
-          "correct": false,
-          "content": "Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui."
-        },
-        {
-          "correct": false,
-          "content": "Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui."
-        },
-        {
-          "correct": false,
-          "content": "Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui."
-        }
-      ],
-      "bloom": 1,
-      "score": 2,
-      "chapter": 5,
-      "level": 4
-    },
-    {
-      "id": "900431",
-      "ques": "aab",
-      "ans": [
-        {
-          "correct": true,
-          "content": "ab"
-        },
-        {
-          "correct": false,
-          "content": "bc"
-        },
-        {
-          "correct": false,
-          "content": "cd"
-        },
-        {
-          "correct": false,
-          "content": "de"
-        }
-      ],
-      "score": 2,
+      "score": 1,
       "bloom": 2,
       "chapter": 1,
-      "level": 4
+      "level": 3
     },
     {
-      "id": "480917",
-      "ques": "cau 1",
+      "id": "220994",
+      "ques": "Với giá trị A-(B-(C-D)), nếu viết dưới dạng Postfix thì sẽ được viết như thế nào?",
       "ans": [
         {
           "correct": false,
-          "content": "asd"
+          "content": "A-BC--D"
         },
         {
           "correct": false,
-          "content": "2asd"
+          "content": "AB-C-D-"
         },
         {
           "correct": false,
-          "content": "aaaaaa"
+          "content": "ABCD---"
         },
         {
           "correct": true,
-          "content": "d"
+          "content": "A-B-CD-"
         }
       ],
-      "score": 3,
+      "score": 1,
+      "bloom": 3,
+      "chapter": 1,
+      "level": 3
+    },
+    {
+      "id": "850576",
+      "ques": "Trong tiêu chuẩn của một chương trình, tính tin cậy thể hiện điều gì?",
+      "ans": [
+        {
+          "correct": true,
+          "content": "Giải thuật + Kiểm tra cài đặt"
+        },
+        {
+          "correct": false,
+          "content": "Đáp ứng quy trình làm phần mêm"
+        },
+        {
+          "correct": false,
+          "content": "Tài nguyên + Giải thuật"
+        },
+        {
+          "correct": false,
+          "content": "Dễ hiều và dễ chỉnh sửa"
+        }
+      ],
+      "score": 1,
+      "bloom": 3,
+      "chapter": 1,
+      "level": 2
+    },
+    {
+      "id": "181943",
+      "ques": "Trong bảng băm (hash table), giải thuật nào được sử dụng để xử lý va chạm (collision) bằng cách lưu trữ danh sách liên kết các phần tử tại mỗi ô của bảng băm?",
+      "ans": [
+        {
+          "correct": false,
+          "content": "Linear Probing"
+        },
+        {
+          "correct": false,
+          "content": "Quadratic Probing"
+        },
+        {
+          "correct": false,
+          "content": "Open Addressing"
+        },
+        {
+          "correct": true,
+          "content": "Separate Chaining"
+        }
+      ],
+      "score": 1,
       "bloom": 1,
+      "chapter": 6,
+      "level": 2
+    },
+    {
+      "id": "361385",
+      "ques": "Khi sử dụng thuật toán sắp xếp đổi chỗ trực tiếp (interchange sort), trong trường hợp tốt nhất sẽ có bao nhiêu lần hoán vị",
+      "ans": [
+        {
+          "correct": false,
+          "content": "-1"
+        },
+        {
+          "correct": false,
+          "content": "1"
+        },
+        {
+          "correct": false,
+          "content": "0"
+        },
+        {
+          "correct": true,
+          "content": "(n(n-1))/2"
+        }
+      ],
+      "score": 1,
+      "bloom": 3,
       "chapter": 2,
+      "level": 3
+    },
+    {
+      "id": "886561",
+      "ques": "Trong giải thuật sắp xếp Quick Sort, tại sao chúng ta thường chọn phần tử chốt là phần tử ở vị trí cuối cùng của mảng?",
+      "ans": [
+        {
+          "correct": false,
+          "content": "Đảm bảo trách trường hợp xấu nhất của giải thuật"
+        },
+        {
+          "correct": true,
+          "content": "Đảm bảo dễ dàng cài đặt thuật toán"
+        },
+        {
+          "correct": false,
+          "content": "Đảm bảo thời gian thực thi luôn là O(n log n)"
+        },
+        {
+          "correct": false,
+          "content": "Đảm bảo phân chia cân bằng khi mảng đã sắp xếp"
+        }
+      ],
+      "score": 1,
+      "bloom": 3,
+      "chapter": 2,
+      "level": 4
+    },
+    {
+      "id": "409393",
+      "ques": "Cấu trúc dữ liệu nào được áp dụng trong việc tổ chức truy vết các quá trình tìm kiếm theo chiều sâu và quay lùi, vét cạn?",
+      "ans": [
+        {
+          "correct": false,
+          "content": "B Tree"
+        },
+        {
+          "correct": true,
+          "content": "Stack"
+        },
+        {
+          "correct": false,
+          "content": "Tree"
+        },
+        {
+          "correct": false,
+          "content": "Queue"
+        }
+      ],
+      "score": 1,
+      "bloom": 3,
+      "chapter": 2,
+      "level": 2
+    },
+    {
+      "id": "412874",
+      "ques": "Thuật toán là gì?",
+      "ans": [
+        {
+          "correct": true,
+          "content": "Là một phương pháp hay cách thức giải quyết vấn đề hoặc yêu cầu"
+        },
+        {
+          "correct": false,
+          "content": "Là một định nghĩa giải quyết vấn đề hoặc yêu cầu"
+        },
+        {
+          "correct": false,
+          "content": "Là một kỹ thuật để sửa máy tính"
+        },
+        {
+          "correct": false,
+          "content": "Là một loại máy tính đặc biệt được sử dụng cho tính toán phức tạp"
+        }
+      ],
+      "score": 1,
+      "bloom": 2,
+      "chapter": 1,
       "level": 1
+    },
+    {
+      "id": "345976",
+      "ques": "Trong phương pháp nối kết trực tiếp (direct chaining),khi chọn M (M bucket) = n/k thì bảng băm hoạt động như thế nào?",
+      "ans": [
+        {
+          "correct": false,
+          "content": "Tốn bộ nhớ hơn k lần và tốc độ chậm đi k lần"
+        },
+        {
+          "correct": true,
+          "content": "Ít tốn bộ nhớ hơn k lần nhưng tốc độ chậm đi k lần"
+        },
+        {
+          "correct": false,
+          "content": "Tốn bộ nhớ hơn k lần nhưng tốc dộ nhanh hơn k lần"
+        },
+        {
+          "correct": false,
+          "content": "Ít tốn bộ nhơ hơn k lần và tốc độ nhanh hơn k lần"
+        }
+      ],
+      "score": 1,
+      "bloom": 4,
+      "chapter": 3,
+      "level": 3
+    },
+    {
+      "id": "831492",
+      "ques": "Trong sắp xếp trộn (Merge Sort), thời gian thực thi tăng lên bao nhiêu khi chúng ta chuyển sang sử dụng sắp xếp trộn song song so với sắp xếp trộn tuần tự?",
+      "ans": [
+        {
+          "correct": false,
+          "content": "Tăng nhiều"
+        },
+        {
+          "correct": false,
+          "content": "Giảm"
+        },
+        {
+          "correct": false,
+          "content": "Tăng ít"
+        },
+        {
+          "correct": true,
+          "content": "Không đổi"
+        }
+      ],
+      "score": 1,
+      "bloom": 4,
+      "chapter": 2,
+      "level": 2
+    },
+    {
+      "id": "297203",
+      "ques": "Trong bảng băm, chiều dài của danh sách liên kết tại mỗi ô được định nghĩa bởi gì?",
+      "ans": [
+        {
+          "correct": true,
+          "content": "Độ phân tán của dữ liệu"
+        },
+        {
+          "correct": false,
+          "content": "Hàm băm được sử dụng"
+        },
+        {
+          "correct": false,
+          "content": "Số lượng phần tử trong danh sách liên kết"
+        },
+        {
+          "correct": false,
+          "content": "Kích thước của bảng băm"
+        }
+      ],
+      "score": 1,
+      "bloom": 1,
+      "chapter": 6,
+      "level": 1
+    },
+    {
+      "id": "473508",
+      "ques": "Hành động nào sau đây được sử dụng chung cho cả hai cấu trúc dữ liệu queue và stack?",
+      "ans": [
+        {
+          "correct": true,
+          "content": "IsEmpty()"
+        },
+        {
+          "correct": false,
+          "content": "EnQueue()"
+        },
+        {
+          "correct": false,
+          "content": "Pop()"
+        },
+        {
+          "correct": false,
+          "content": "DeQueue()"
+        }
+      ],
+      "score": 1,
+      "bloom": 2,
+      "chapter": 4,
+      "level": 2
     }
   ],
   "users": [
@@ -845,51 +533,7 @@
       "active": true,
       "role": 0,
       "createAt": 1728202663545,
-      "exams": [
-        {
-          "id": 1,
-          "createAt": 1728202663545,
-          "score": 5
-        },
-        {
-          "id": 2,
-          "createAt": 1728202663545,
-          "score": 4
-        },
-        {
-          "id": 3,
-          "createAt": 1728202663545,
-          "score": 3
-        },
-        {
-          "id": 4,
-          "createAt": 1728202663545,
-          "score": 3
-        },
-        {
-          "id": 5,
-          "createAt": 1728202663545,
-          "score": 3
-        },
-        {
-          "id": 6,
-          "createAt": 1728202663545,
-          "score": 3
-        },
-        {
-          "id": 7,
-          "createAt": 1728202663545,
-          "score": 3
-        },
-        {
-          "id": "663080",
-          "examId": 1,
-          "createAt": 1728567019367,
-          "score": 0,
-          "duration": 0,
-          "passed": false
-        }
-      ]
+      "exams": []
     },
     {
       "id": "2",
@@ -1139,316 +783,86 @@
       "exams": []
     },
     {
-      "id": "dd7a",
-      "firstName": "Nghiem",
-      "lastName": "Le",
-      "email": "hieunghiemle@gmail.com",
-      "passwords": "1231231231",
-      "avatar": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAG4AbgMBIgACEQEDEQH/xAAcAAAABwEBAAAAAAAAAAAAAAAAAQMEBQYHAgj/xAA2EAACAQMDAQYDBgUFAAAAAAABAgMABBEFEiExBhMiQVFhFIGRBzJxscHRIzNCUmIVQ1OCof/EABgBAAMBAQAAAAAAAAAAAAAAAAECAwAE/8QAHhEBAQACAwEBAQEAAAAAAAAAAAECEQMSITFBYSL/2gAMAwEAAhEDEQA/ANdHSjFUyf7QdLguGi2ySbD4mTkVN6R2l0vVcC2uV7z/AI2OGp9wOtTa0YoDmjxWAYo6GPShWYKFHXErpGjPI21VBLH0FZmefbDrxstLi0q3cia7OZNp5EY6/U1lNhAG8TKR096cdqdXk7RdqLm7ydmdsX+KDpRd6FgCr90eW4DNSyu66OOeOzNi8hWDPeRsHVvMEGvROmXAu9Ptrkf7sSv9RXm7S4W+KaZicdFya9Adi2J7MaeD1EWMemCR+lDjrc01Im6FHQxVXO85W9m8eoXNtPlZIpWQ545zXdzpk8D97BuDDkFCQatX2iaLJDrrXdudvxKb19C44NV20u5oiE1SNjJnoOBUteurH2J3s19oF9pDJba2HubXoJf64/3FappeqWeq2q3FjOk0Z8wensfSsja1tL20Z2iypHrUVoepTdntYL2jv8K/hdFP6U0y0lljL8b+DXMkqRjLsAPc1R7btindB+9B46H86Eus/FSEs+eP/KPcnWrgNRtjn+IOtVfthr6CyntoG6ghmz14qIvNU/hkqcsecVStRu7m4uSDnGfT8",
-      "active": true,
-      "role": 1,
-      "gender": 0,
-      "exams": []
-    },
-    {
-      "id": "f931",
-      "firstName": "Nghiem",
-      "lastName": "Le",
-      "email": "isaacisc01022014@gmail.com",
-      "passwords": "1231231231",
-      "avatar": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAG4AbgMBIgACEQEDEQH/xAAcAAAABwEBAAAAAAAAAAAAAAAAAQMEBQYHAgj/xAA2EAACAQMDAQYDBgUFAAAAAAABAgMABBEFEiExBhMiQVFhFIGRBzJxscHRIzNCUmIVQ1OCof/EABgBAAMBAQAAAAAAAAAAAAAAAAECAwAE/8QAHhEBAQACAwEBAQEAAAAAAAAAAAECEQMSITFBYSL/2gAMAwEAAhEDEQA/ANdHSjFUyf7QdLguGi2ySbD4mTkVN6R2l0vVcC2uV7z/AI2OGp9wOtTa0YoDmjxWAYo6GPShWYKFHXErpGjPI21VBLH0FZmefbDrxstLi0q3cia7OZNp5EY6/U1lNhAG8TKR096cdqdXk7RdqLm7ydmdsX+KDpRd6FgCr90eW4DNSyu66OOeOzNi8hWDPeRsHVvMEGvROmXAu9Ptrkf7sSv9RXm7S4W+KaZicdFya9Adi2J7MaeD1EWMemCR+lDjrc01Im6FHQxVXO85W9m8eoXNtPlZIpWQ545zXdzpk8D97BuDDkFCQatX2iaLJDrrXdudvxKb19C44NV20u5oiE1SNjJnoOBUteurH2J3s19oF9pDJba2HubXoJf64/3FappeqWeq2q3FjOk0Z8wensfSsja1tL20Z2iypHrUVoepTdntYL2jv8K/hdFP6U0y0lljL8b+DXMkqRjLsAPc1R7btindB+9B46H86Eus/FSEs+eP/KPcnWrgNRtjn+IOtVfthr6CyntoG6ghmz14qIvNU/hkqcsecVStRu7m4uSDnGfT8",
-      "active": true,
-      "role": 1,
-      "gender": 0,
-      "exams": []
-    },
-    {
-      "id": "d8f2",
-      "firstName": "Nghiem",
-      "lastName": "Le",
-      "email": "ccd@gmail.com",
+      "id": "43e8",
+      "first_name": "Nghiem",
+      "last_name": "Le",
+      "email": "abc@gmail.com",
       "passwords": "123123123",
-      "avatar": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAG4AbgMBIgACEQEDEQH/xAAcAAAABwEBAAAAAAAAAAAAAAAAAQMEBQYHAgj/xAA2EAACAQMDAQYDBgUFAAAAAAABAgMABBEFEiExBhMiQVFhFIGRBzJxscHRIzNCUmIVQ1OCof/EABgBAAMBAQAAAAAAAAAAAAAAAAECAwAE/8QAHhEBAQACAwEBAQEAAAAAAAAAAAECEQMSITFBYSL/2gAMAwEAAhEDEQA/ANdHSjFUyf7QdLguGi2ySbD4mTkVN6R2l0vVcC2uV7z/AI2OGp9wOtTa0YoDmjxWAYo6GPShWYKFHXErpGjPI21VBLH0FZmefbDrxstLi0q3cia7OZNp5EY6/U1lNhAG8TKR096cdqdXk7RdqLm7ydmdsX+KDpRd6FgCr90eW4DNSyu66OOeOzNi8hWDPeRsHVvMEGvROmXAu9Ptrkf7sSv9RXm7S4W+KaZicdFya9Adi2J7MaeD1EWMemCR+lDjrc01Im6FHQxVXO85W9m8eoXNtPlZIpWQ545zXdzpk8D97BuDDkFCQatX2iaLJDrrXdudvxKb19C44NV20u5oiE1SNjJnoOBUteurH2J3s19oF9pDJba2HubXoJf64/3FappeqWeq2q3FjOk0Z8wensfSsja1tL20Z2iypHrUVoepTdntYL2jv8K/hdFP6U0y0lljL8b+DXMkqRjLsAPc1R7btindB+9B46H86Eus/FSEs+eP/KPcnWrgNRtjn+IOtVfthr6CyntoG6ghmz14qIvNU/hkqcsecVStRu7m4uSDnGfT8",
-      "active": true,
-      "role": 1,
-      "gender": 0,
-      "exams": []
-    },
-    {
-      "id": "d8d6",
-      "firstName": "Nghiem",
-      "lastName": "Le",
-      "email": "bbb@gmail.com",
-      "passwords": "123123123",
-      "avatar": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAG4AbgMBIgACEQEDEQH/xAAcAAAABwEBAAAAAAAAAAAAAAAAAQMEBQYHAgj/xAA2EAACAQMDAQYDBgUFAAAAAAABAgMABBEFEiExBhMiQVFhFIGRBzJxscHRIzNCUmIVQ1OCof/EABgBAAMBAQAAAAAAAAAAAAAAAAECAwAE/8QAHhEBAQACAwEBAQEAAAAAAAAAAAECEQMSITFBYSL/2gAMAwEAAhEDEQA/ANdHSjFUyf7QdLguGi2ySbD4mTkVN6R2l0vVcC2uV7z/AI2OGp9wOtTa0YoDmjxWAYo6GPShWYKFHXErpGjPI21VBLH0FZmefbDrxstLi0q3cia7OZNp5EY6/U1lNhAG8TKR096cdqdXk7RdqLm7ydmdsX+KDpRd6FgCr90eW4DNSyu66OOeOzNi8hWDPeRsHVvMEGvROmXAu9Ptrkf7sSv9RXm7S4W+KaZicdFya9Adi2J7MaeD1EWMemCR+lDjrc01Im6FHQxVXO85W9m8eoXNtPlZIpWQ545zXdzpk8D97BuDDkFCQatX2iaLJDrrXdudvxKb19C44NV20u5oiE1SNjJnoOBUteurH2J3s19oF9pDJba2HubXoJf64/3FappeqWeq2q3FjOk0Z8wensfSsja1tL20Z2iypHrUVoepTdntYL2jv8K/hdFP6U0y0lljL8b+DXMkqRjLsAPc1R7btindB+9B46H86Eus/FSEs+eP/KPcnWrgNRtjn+IOtVfthr6CyntoG6ghmz14qIvNU/hkqcsecVStRu7m4uSDnGfT8",
-      "active": true,
-      "role": 1,
-      "gender": 0,
-      "exams": []
-    },
-    {
-      "id": "87b6",
-      "firstName": "Thinh",
-      "lastName": "Chau",
-      "email": "123@gmail.com",
-      "passwords": "123456789",
-      "avatar": "data:image/jpeg;base64,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",
+      "avatar": "data:image/jpeg;base64,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",
       "active": true,
       "role": 1,
       "gender": 0,
       "exams": [
         {
-          "id": "617678",
-          "examId": 1,
-          "createAt": 1728608350092,
-          "score": 2,
-          "duration": 1,
-          "passed": false
-        },
-        {
-          "id": "670981",
-          "examId": null,
-          "createAt": 1728609495305,
-          "score": 0,
-          "duration": null,
-          "passed": false
-        },
-        {
-          "id": "872090",
-          "examId": null,
-          "createAt": 1728609591707,
-          "score": 0,
-          "duration": null,
-          "passed": false
-        },
-        {
-          "id": "540257",
-          "examId": null,
-          "createAt": 1728609842925,
-          "score": 0,
-          "duration": null,
-          "passed": false
-        },
-        {
-          "id": "773147",
-          "examId": null,
-          "createAt": 1728609861640,
-          "score": 0,
-          "duration": null,
-          "passed": false
-        },
-        {
-          "id": "378946",
-          "examId": 1,
-          "createAt": 1728610009393,
-          "score": 0,
-          "duration": 1,
-          "passed": false
-        },
-        {
-          "id": "995709",
-          "examId": 1,
-          "createAt": 1728610017695,
+          "id": "814316",
+          "examId": 856933,
+          "createAt": 1728646934236,
           "score": 4,
           "duration": 1,
           "passed": false
         },
         {
-          "id": "371014",
-          "examId": 1,
-          "createAt": 1728610022747,
-          "score": 2,
-          "duration": 1,
+          "id": "172620",
+          "examId": 856933,
+          "createAt": 1728660222076,
+          "score": 4,
+          "duration": 8,
           "passed": false
         }
       ]
+    },
+    {
+      "id": "e895",
+      "first_name": "Nghiêm",
+      "last_name": "Lê",
+      "email": "nghiemle@gmail.com",
+      "passwords": "123123123",
+      "avatar": "data:image/jpeg;base64,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",
+      "active": true,
+      "role": 1,
+      "gender": 0,
+      "exams": []
     }
   ],
   "exams": [
     {
-      "id": "1",
-      "maximumScore": 46,
-      "passScore": 20,
-      "testingDuration": 120,
-      "questions": [
-        "1",
-        "2",
-        "3",
-        "4",
-        "5",
-        "6",
-        "7",
-        "8",
-        "9",
-        "10",
-        "11",
-        "12",
-        "13",
-        "14",
-        "15",
-        "16",
-        "17",
-        "18",
-        "19",
-        "20",
-        "900431",
-        "29",
-        "30"
-      ],
-      "title": "Mid-term1 Test",
-      "status": true,
-      "createAt": 1728455935428,
-      "updateAt": 1728456015067
-    },
-    {
-      "id": "2",
-      "maximumScore": 40,
-      "passScore": 20,
-      "testingDuration": 120,
-      "questions": [
-        "1",
-        "2",
-        "3",
-        "4",
-        "5",
-        "6",
-        "7",
-        "8",
-        "9",
-        "10",
-        "11",
-        "12",
-        "13",
-        "14",
-        "15",
-        "16",
-        "17",
-        "18",
-        "19",
-        "20"
-      ],
-      "title": "Mid-term2 Test",
-      "status": true,
-      "createAt": 1728444247950,
-      "updateAt": 1728444247950
-    },
-    {
-      "id": "3",
-      "maximumScore": 40,
-      "passScore": 20,
-      "testingDuration": 120,
-      "questions": [
-        "1",
-        "2",
-        "3",
-        "4",
-        "5",
-        "6",
-        "7",
-        "8",
-        "9",
-        "10",
-        "11",
-        "12",
-        "13",
-        "14",
-        "15",
-        "16",
-        "17",
-        "18",
-        "19",
-        "20"
-      ],
-      "title": "Final-term1 Test",
-      "status": true,
-      "createAt": 1728444247950,
-      "updateAt": 1728444247950
-    },
-    {
-      "id": "3",
-      "maximumScore": 40,
-      "passScore": 20,
-      "testingDuration": 120,
-      "questions": [
-        "1",
-        "2",
-        "3",
-        "4",
-        "5",
-        "6",
-        "7",
-        "8",
-        "9",
-        "10",
-        "11",
-        "12",
-        "13",
-        "14",
-        "15",
-        "16",
-        "17",
-        "18",
-        "19",
-        "20"
-      ],
-      "title": "Final-term2 Test",
-      "status": true,
-      "createAt": 1728444247950,
-      "updateAt": 1728444247950
-    },
-    {
-      "id": "114f",
-      "title": "mini-test",
-      "maximumScore": 40,
-      "passScore": 20,
+      "id": "856933",
+      "title": "Mid-term-test",
+      "maximumScore": 10,
+      "passScore": 5,
       "testingDuration": 45,
       "questions": [
-        "1",
-        "2",
-        "3",
-        "5",
-        "7",
-        "8",
-        "10",
-        "12",
-        "13",
-        "15",
-        "14",
-        "11",
-        "9",
-        "4",
-        "16",
-        "17",
-        "18",
-        "19",
-        "20",
-        "21"
+        "902541",
+        "178836",
+        "812351",
+        "992487",
+        "867430",
+        "83557",
+        "545408",
+        "733798",
+        "270121",
+        "220994"
       ],
       "status": true,
-      "createAt": 1728444247950,
-      "updateAt": 1728444829444
+      "createAt": 1728646814845,
+      "updateAt": 1728646878425
     },
     {
-      "id": "98587",
-      "title": "mini-test2",
-      "maximumScore": 20,
-      "passScore": 10,
-      "testingDuration": 120,
+      "id": "260808",
+      "title": "Final-test",
+      "maximumScore": 5,
+      "passScore": 3,
+      "testingDuration": 45,
       "questions": [
-        "2",
-        "4",
-        "10",
-        "14",
-        "17",
-        "18",
-        "19",
-        "22",
-        "23",
-        "26"
+        "867430",
+        "270121",
+        "361385",
+        "886561",
+        "412874"
       ],
       "status": true,
-      "createAt": 1728444411400,
-      "updateAt": 1728444826771
+      "createAt": 1728646866593,
+      "updateAt": 1728646879757
     }
   ]
 }
